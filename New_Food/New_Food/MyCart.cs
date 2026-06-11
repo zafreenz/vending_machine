@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace New_Food
 {
-    public partial class Form1 : Form
+    public partial class MyCart : Form
     {
-        public Form1()
+        public MyCart()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
