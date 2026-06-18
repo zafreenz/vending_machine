@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -11,23 +10,23 @@ using System.Windows.Forms;
 
 namespace New_Food
 {
-    public partial class MyCart : Form
+    public partial class Payment : Form
     {
-        public MyCart()
+        public Payment()
         {
             InitializeComponent();
         }
 
-        private void btnProceed_Click(object sender, EventArgs e)
+        private void Payment_Load(object sender, EventArgs e)
         {
-            Payment payment = new Payment();
-            payment.Show();
-            this.Hide();
+
         }
 
-        private void btnRemove_Click(object sender, EventArgs e)
+        private void btnConfirm_Click(object sender, EventArgs e)
         {
-
+            Receipt receipt = new Receipt();
+            receipt.Show();
+            this.Hide();
         }
     }
 }
