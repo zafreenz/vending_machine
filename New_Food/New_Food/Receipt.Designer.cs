@@ -31,12 +31,12 @@
             this.components = new System.ComponentModel.Container();
             this.lblPaymentSuccessful = new System.Windows.Forms.Label();
             this.lblTQ = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.lblCountdown = new System.Windows.Forms.Label();
+            this.dgvItem = new System.Windows.Forms.DataGridView();
             this.colItem = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblCountdown = new System.Windows.Forms.Label();
             this.countdownTimer = new System.Windows.Forms.Timer(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvItem)).BeginInit();
             this.SuspendLayout();
             // 
             // lblPaymentSuccessful
@@ -60,32 +60,22 @@
             this.lblTQ.Text = "Thank You!";
             this.lblTQ.Click += new System.EventHandler(this.lblTQ_Click);
             // 
-            // dataGridView1
+            // dgvItem
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvItem.AllowUserToAddRows = false;
+            this.dgvItem.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvItem.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgvItem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvItem.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colItem,
             this.colStatus});
-            this.dataGridView1.Location = new System.Drawing.Point(113, 192);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(789, 150);
-            this.dataGridView1.TabIndex = 2;
-            // 
-            // lblCountdown
-            // 
-            this.lblCountdown.AutoSize = true;
-            this.lblCountdown.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCountdown.Location = new System.Drawing.Point(365, 445);
-            this.lblCountdown.Name = "lblCountdown";
-            this.lblCountdown.Size = new System.Drawing.Size(319, 25);
-            this.lblCountdown.TabIndex = 3;
-            this.lblCountdown.Text = "Returning to home in 0 second(s)....";
+            this.dgvItem.Location = new System.Drawing.Point(113, 192);
+            this.dgvItem.Name = "dgvItem";
+            this.dgvItem.RowHeadersVisible = false;
+            this.dgvItem.RowHeadersWidth = 51;
+            this.dgvItem.RowTemplate.Height = 24;
+            this.dgvItem.Size = new System.Drawing.Size(789, 150);
+            this.dgvItem.TabIndex = 2;
             // 
             // colItem
             // 
@@ -99,6 +89,16 @@
             this.colStatus.MinimumWidth = 6;
             this.colStatus.Name = "colStatus";
             // 
+            // lblCountdown
+            // 
+            this.lblCountdown.AutoSize = true;
+            this.lblCountdown.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCountdown.Location = new System.Drawing.Point(365, 445);
+            this.lblCountdown.Name = "lblCountdown";
+            this.lblCountdown.Size = new System.Drawing.Size(319, 25);
+            this.lblCountdown.TabIndex = 3;
+            this.lblCountdown.Text = "Returning to home in 0 second(s)....";
+            // 
             // countdownTimer
             // 
             this.countdownTimer.Interval = 1000;
@@ -110,13 +110,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1012, 501);
             this.Controls.Add(this.lblCountdown);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvItem);
             this.Controls.Add(this.lblTQ);
             this.Controls.Add(this.lblPaymentSuccessful);
             this.Name = "Receipt";
             this.Text = "Receipt";
             this.Load += new System.EventHandler(this.Receipt_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvItem)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -126,7 +126,7 @@
 
         private System.Windows.Forms.Label lblPaymentSuccessful;
         private System.Windows.Forms.Label lblTQ;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvItem;
         private System.Windows.Forms.Label lblCountdown;
         private System.Windows.Forms.DataGridViewTextBoxColumn colItem;
         private System.Windows.Forms.DataGridViewTextBoxColumn colStatus;
