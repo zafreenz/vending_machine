@@ -61,6 +61,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DrinkControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrinkControl.Designer.cs">
+      <DependentUpon>DrinkControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrinkManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DrinkManage.Designer.cs">
+      <DependentUpon>DrinkManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FoodControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FoodControl.Designer.cs">
+      <DependentUpon>FoodControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,8 +87,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="DrinkControl.resx">
+      <DependentUpon>DrinkControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrinkManage.resx">
+      <DependentUpon>DrinkManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FoodControl.resx">
+      <DependentUpon>FoodControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -80,6 +104,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -95,6 +120,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\burger.jpg" />
     <Content Include="VendingMachine.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
