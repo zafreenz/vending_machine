@@ -61,16 +61,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="dashboard_admin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="dashboard_admin.Designer.cs">
+      <DependentUpon>dashboard_admin.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="settings_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="settings_admin.Designer.cs">
+      <DependentUpon>settings_admin.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="dashboard_admin.resx">
+      <DependentUpon>dashboard_admin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -80,7 +86,11 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="settings_admin.resx">
+      <DependentUpon>settings_admin.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -95,6 +105,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2026-06-19 at 3.33.31 PM.jpeg" />
+    <None Include="Resources\cc48e52ccba0565ab5924af96a8ea9f1.jpg" />
     <Content Include="VendingMachine.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
