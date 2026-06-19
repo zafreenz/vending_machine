@@ -95,7 +95,6 @@
     <EmbeddedResource Include="settings_admin.resx">
       <DependentUpon>settings_admin.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="bin\Debug\New_Food.exe.config" />
     <None Include="DataSetVendingMachine.xsc">
       <DependentUpon>DataSetVendingMachine.xsd</DependentUpon>
     </None>
@@ -121,29 +120,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="bin\Debug\bin\Debug\bin\Debug\VendingMachine.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="bin\Debug\bin\Debug\bin\Debug\VendingMachine_log.ldf">
-      <DependentUpon>VendingMachine.mdf</DependentUpon>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="bin\Debug\bin\Debug\VendingMachine.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="bin\Debug\bin\Debug\VendingMachine_log.ldf">
-      <DependentUpon>VendingMachine.mdf</DependentUpon>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="bin\Debug\New_Food.exe" />
-    <Content Include="bin\Debug\New_Food.pdb" />
-    <Content Include="bin\Debug\VendingMachine.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="bin\Debug\VendingMachine_log.ldf">
-      <DependentUpon>VendingMachine.mdf</DependentUpon>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="Images\Biscuit1.png" />
     <Content Include="Images\Biscuit10.png" />
     <Content Include="Images\Biscuit2.png" />
@@ -251,8 +227,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="bin\Release\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
