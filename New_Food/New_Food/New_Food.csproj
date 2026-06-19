@@ -72,7 +72,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetVendingMachine.xsd</DependentUpon>
     </Compile>
-    <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="settings_admin.cs">
@@ -84,9 +83,6 @@
     <EmbeddedResource Include="dashboard_admin.resx">
       <DependentUpon>dashboard_admin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="obj\Debug\New_Food.dashboard_admin.resources" />
-    <EmbeddedResource Include="obj\Debug\New_Food.Properties.Resources.resources" />
-    <EmbeddedResource Include="obj\Debug\New_Food.settings_admin.resources" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -111,11 +107,6 @@
     <None Include="DataSetVendingMachine.xss">
       <DependentUpon>DataSetVendingMachine.xsd</DependentUpon>
     </None>
-    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
-    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
-    <None Include="obj\Debug\New_Food.csproj.AssemblyReference.cache" />
-    <None Include="obj\Debug\New_Food.csproj.CoreCompileInputs.cache" />
-    <None Include="obj\Debug\New_Food.csproj.GenerateResource.cache" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -238,10 +229,6 @@
     <Content Include="Images\Yogurt6.png" />
     <Content Include="Images\Yogurt7.png" />
     <Content Include="Images\Yogurt8.png" />
-    <Content Include="obj\Debug\New_Food.csproj.FileListAbsolute.txt" />
-    <Content Include="obj\Debug\New_Food.exe" />
-    <Content Include="obj\Debug\New_Food.pdb" />
-    <Content Include="obj\Debug\TempPE\DataSetVendingMachine.Designer.cs.dll" />
     <Content Include="Resources\cc48e52ccba0565ab5924af96a8ea9f1.jpg" />
     <Content Include="Resources\WhatsApp Image 2026-06-19 at 3.33.31 PM.jpeg" />
     <Content Include="VendingMachine.mdf">
