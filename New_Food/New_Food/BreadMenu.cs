@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace New_Food
 {
-    public partial class ProductDetails : Form
+    public partial class BreadMenu : UserControl
     {
-        public ProductDetails()
+        public BreadMenu()
         {
             InitializeComponent();
+        }
+
+        private void Jagunglbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -61,35 +61,135 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AllDrinksMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AllDrinksMenu.Designer.cs">
+      <DependentUpon>AllDrinksMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllFoodsMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AllFoodsMenu.Designer.cs">
+      <DependentUpon>AllFoodsMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BiscuitMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BiscuitMenu.Designer.cs">
+      <DependentUpon>BiscuitMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BreadMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BreadMenu.Designer.cs">
+      <DependentUpon>BreadMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CandiesMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CandiesMenu.Designer.cs">
+      <DependentUpon>CandiesMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CarbonatedMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CarbonatedMenu.Designer.cs">
+      <DependentUpon>CarbonatedMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JuiceMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="JuiceMenu.Designer.cs">
+      <DependentUpon>JuiceMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="ProductDetails.cs">
-      <SubType>Form</SubType>
+    <Compile Include="MilkMenu.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ProductDetails.Designer.cs">
-      <DependentUpon>ProductDetails.cs</DependentUpon>
+    <Compile Include="MilkMenu.Designer.cs">
+      <DependentUpon>MilkMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MineralWaterMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MineralWaterMenu.Designer.cs">
+      <DependentUpon>MineralWaterMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NutsMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NutsMenu.Designer.cs">
+      <DependentUpon>NutsMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SnacksMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SnacksMenu.Designer.cs">
+      <DependentUpon>SnacksMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YogurtMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="YogurtMenu.Designer.cs">
+      <DependentUpon>YogurtMenu.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AllDrinksMenu.resx">
+      <DependentUpon>AllDrinksMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllFoodsMenu.resx">
+      <DependentUpon>AllFoodsMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BiscuitMenu.resx">
+      <DependentUpon>BiscuitMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BreadMenu.resx">
+      <DependentUpon>BreadMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CandiesMenu.resx">
+      <DependentUpon>CandiesMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CarbonatedMenu.resx">
+      <DependentUpon>CarbonatedMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JuiceMenu.resx">
+      <DependentUpon>JuiceMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ProductDetails.resx">
-      <DependentUpon>ProductDetails.cs</DependentUpon>
+    <EmbeddedResource Include="MilkMenu.resx">
+      <DependentUpon>MilkMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MineralWaterMenu.resx">
+      <DependentUpon>MineralWaterMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NutsMenu.resx">
+      <DependentUpon>NutsMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
+    <EmbeddedResource Include="SnacksMenu.resx">
+      <DependentUpon>SnacksMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YogurtMenu.resx">
+      <DependentUpon>YogurtMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
