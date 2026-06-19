@@ -12,6 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -24,7 +25,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -61,22 +61,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dashboard_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dashboard_admin.Designer.cs">
+      <DependentUpon>dashboard_admin.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataSetVendingMachine.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetVendingMachine.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
+    <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="settings_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="settings_admin.Designer.cs">
+      <DependentUpon>settings_admin.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="dashboard_admin.resx">
+      <DependentUpon>dashboard_admin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\New_Food.dashboard_admin.resources" />
+    <EmbeddedResource Include="obj\Debug\New_Food.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\Debug\New_Food.settings_admin.resources" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -86,6 +96,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="settings_admin.resx">
+      <DependentUpon>settings_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="bin\Debug\New_Food.exe.config" />
     <None Include="DataSetVendingMachine.xsc">
       <DependentUpon>DataSetVendingMachine.xsd</DependentUpon>
     </None>
@@ -97,6 +111,11 @@
     <None Include="DataSetVendingMachine.xss">
       <DependentUpon>DataSetVendingMachine.xsd</DependentUpon>
     </None>
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\New_Food.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\New_Food.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\New_Food.csproj.GenerateResource.cache" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -111,6 +130,120 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\Debug\bin\Debug\bin\Debug\VendingMachine.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Debug\bin\Debug\bin\Debug\VendingMachine_log.ldf">
+      <DependentUpon>VendingMachine.mdf</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Debug\bin\Debug\VendingMachine.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Debug\bin\Debug\VendingMachine_log.ldf">
+      <DependentUpon>VendingMachine.mdf</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Debug\New_Food.exe" />
+    <Content Include="bin\Debug\New_Food.pdb" />
+    <Content Include="bin\Debug\VendingMachine.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Debug\VendingMachine_log.ldf">
+      <DependentUpon>VendingMachine.mdf</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Biscuit1.png" />
+    <Content Include="Images\Biscuit10.png" />
+    <Content Include="Images\Biscuit2.png" />
+    <Content Include="Images\Biscuit3.png" />
+    <Content Include="Images\Biscuit4.png" />
+    <Content Include="Images\Biscuit5.png" />
+    <Content Include="Images\Biscuit6.png" />
+    <Content Include="Images\Biscuit7.png" />
+    <Content Include="Images\Biscuit8.png" />
+    <Content Include="Images\Biscuit9.png" />
+    <Content Include="Images\Bread1.png" />
+    <Content Include="Images\Bread2.png" />
+    <Content Include="Images\Bread3.png" />
+    <Content Include="Images\Bread4.png" />
+    <Content Include="Images\Bread5.png" />
+    <Content Include="Images\Bread6.png" />
+    <Content Include="Images\Bread7.png" />
+    <Content Include="Images\Candies1.png" />
+    <Content Include="Images\Candies2.png" />
+    <Content Include="Images\Candies3.png" />
+    <Content Include="Images\Candies4.png" />
+    <Content Include="Images\Candies5.png" />
+    <Content Include="Images\Candies6.png" />
+    <Content Include="Images\Candies7.png" />
+    <Content Include="Images\Candies8.png" />
+    <Content Include="Images\Candies9.png" />
+    <Content Include="Images\Carbonated1.png" />
+    <Content Include="Images\Carbonated10.png" />
+    <Content Include="Images\Carbonated11.png" />
+    <Content Include="Images\Carbonated12.png" />
+    <Content Include="Images\Carbonated2.png" />
+    <Content Include="Images\Carbonated3.png" />
+    <Content Include="Images\Carbonated4.png" />
+    <Content Include="Images\Carbonated5.png" />
+    <Content Include="Images\Carbonated6.png" />
+    <Content Include="Images\Carbonated7.png" />
+    <Content Include="Images\Carbonated8.png" />
+    <Content Include="Images\Carbonated9.png" />
+    <Content Include="Images\Juice1.png" />
+    <Content Include="Images\Juice2.png" />
+    <Content Include="Images\Juice3.png" />
+    <Content Include="Images\Juice4.png" />
+    <Content Include="Images\Juice5.png" />
+    <Content Include="Images\Juice6.png" />
+    <Content Include="Images\Juice7.png" />
+    <Content Include="Images\Milk1.png" />
+    <Content Include="Images\Milk2.png" />
+    <Content Include="Images\Milk3.png" />
+    <Content Include="Images\Milk4.png" />
+    <Content Include="Images\Milk5.png" />
+    <Content Include="Images\Milk6.png" />
+    <Content Include="Images\Milk7.png" />
+    <Content Include="Images\Milk8.png" />
+    <Content Include="Images\Milk9.png" />
+    <Content Include="Images\Nuts1.png" />
+    <Content Include="Images\Nuts2.png" />
+    <Content Include="Images\Nuts3.png" />
+    <Content Include="Images\Nuts4.png" />
+    <Content Include="Images\Nuts5.png" />
+    <Content Include="Images\Nuts6.png" />
+    <Content Include="Images\Nuts7.png" />
+    <Content Include="Images\Snacks1.png" />
+    <Content Include="Images\Snacks10.png" />
+    <Content Include="Images\Snacks11.png" />
+    <Content Include="Images\Snacks12.png" />
+    <Content Include="Images\Snacks2.png" />
+    <Content Include="Images\Snacks3.png" />
+    <Content Include="Images\Snacks4.png" />
+    <Content Include="Images\Snacks5.png" />
+    <Content Include="Images\Snacks6.png" />
+    <Content Include="Images\Snacks7.png" />
+    <Content Include="Images\Snacks8.png" />
+    <Content Include="Images\Snacks9.png" />
+    <Content Include="Images\Water1.png" />
+    <Content Include="Images\Water2.png" />
+    <Content Include="Images\Water3.png" />
+    <Content Include="Images\Water4.png" />
+    <Content Include="Images\Yogurt1.png" />
+    <Content Include="Images\Yogurt2.png" />
+    <Content Include="Images\Yogurt3.png" />
+    <Content Include="Images\Yogurt4.png" />
+    <Content Include="Images\Yogurt5.png" />
+    <Content Include="Images\Yogurt6.png" />
+    <Content Include="Images\Yogurt7.png" />
+    <Content Include="Images\Yogurt8.png" />
+    <Content Include="obj\Debug\New_Food.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\New_Food.exe" />
+    <Content Include="obj\Debug\New_Food.pdb" />
+    <Content Include="obj\Debug\TempPE\DataSetVendingMachine.Designer.cs.dll" />
+    <Content Include="Resources\cc48e52ccba0565ab5924af96a8ea9f1.jpg" />
+    <Content Include="Resources\WhatsApp Image 2026-06-19 at 3.33.31 PM.jpeg" />
     <Content Include="VendingMachine.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -130,6 +263,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
