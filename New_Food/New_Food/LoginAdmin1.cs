@@ -39,7 +39,7 @@ namespace New_Food
 
                 if (count > 0)
                 {
-                    Restock fr = new Restock();
+                    dashboard_admin fr = new dashboard_admin();
                     fr.Show();
                     this.Hide();
                 }

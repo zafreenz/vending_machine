@@ -29,7 +29,7 @@ Integrated Security=True";
 
                 // TOTAL DRINK
                 string drinkQuery =
-                    "SELECT COUNT(*) FROM Product WHERE Category IN ('Carbonated','Juices','Milk','Mineral Water','Yogurt')";
+"SELECT COUNT(*) FROM Product WHERE Category IN ('Carbonated','Juice','Milk','Mineral','Yogurt')";
 
                 SqlCommand drinkCmd = new SqlCommand(drinkQuery, conn);
 
@@ -38,7 +38,10 @@ Integrated Security=True";
 
                 // TOTAL FOOD
                 string foodQuery =
-                    "SELECT COUNT(*) FROM Product WHERE Category IN ('Snack','Bread','Nuts','Biscuit','Candies')";
+ @"SELECT COUNT(*)
+FROM Product
+WHERE Category IN
+('Snacks','Bread','Nuts','Biscuit','Candies')";
 
                 SqlCommand foodCmd = new SqlCommand(foodQuery, conn);
 
@@ -52,7 +55,17 @@ Integrated Security=True";
                 SqlCommand lowCmd = new SqlCommand(lowStockQuery, conn);
 
                 lblLowStock.Text = lowCmd.ExecuteScalar().ToString();
+
+                // SALES TODAY
+                string salesQuery =
+@"SELECT ISNULL(SUM(total),0)
+FROM dbo.[Transaction]";
+
+                SqlCommand salesCmd = new SqlCommand(salesQuery, conn);
+
+                lblSales.Text = "RM" + salesCmd.ExecuteScalar().ToString();
             }
+
         }
         private void dashboard_admin_Load(object sender, EventArgs e)
         {
@@ -133,6 +146,11 @@ Integrated Security=True";
         
 
         private void lblDrink_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblFood_Click(object sender, EventArgs e)
         {
 
         }

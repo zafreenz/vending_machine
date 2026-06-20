@@ -131,6 +131,7 @@
             this.lblFood.Size = new System.Drawing.Size(49, 54);
             this.lblFood.TabIndex = 4;
             this.lblFood.Text = "0";
+            this.lblFood.Click += new System.EventHandler(this.lblFood_Click);
             // 
             // label5
             // 

@@ -39,8 +39,8 @@ namespace New_Food
                     {
                         fullnametxt.Text = dr["username"].ToString();
 
-                        // Password tetap ada tapi tersorok
-                        currpasstxt.Text = dr["password"].ToString();
+                        
+                        
                     }
 
                     dr.Close();

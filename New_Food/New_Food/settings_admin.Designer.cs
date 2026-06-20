@@ -123,7 +123,7 @@
             // 
             this.confirmpasslbl.AutoSize = true;
             this.confirmpasslbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.confirmpasslbl.Location = new System.Drawing.Point(25, 334);
+            this.confirmpasslbl.Location = new System.Drawing.Point(3, 334);
             this.confirmpasslbl.Name = "confirmpasslbl";
             this.confirmpasslbl.Size = new System.Drawing.Size(163, 20);
             this.confirmpasslbl.TabIndex = 3;
@@ -134,7 +134,7 @@
             // 
             this.newpasslbl.AutoSize = true;
             this.newpasslbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.newpasslbl.Location = new System.Drawing.Point(25, 260);
+            this.newpasslbl.Location = new System.Drawing.Point(3, 260);
             this.newpasslbl.Name = "newpasslbl";
             this.newpasslbl.Size = new System.Drawing.Size(133, 20);
             this.newpasslbl.TabIndex = 2;
@@ -145,7 +145,7 @@
             // 
             this.currpasslbl.AutoSize = true;
             this.currpasslbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currpasslbl.Location = new System.Drawing.Point(25, 179);
+            this.currpasslbl.Location = new System.Drawing.Point(3, 177);
             this.currpasslbl.Name = "currpasslbl";
             this.currpasslbl.Size = new System.Drawing.Size(160, 20);
             this.currpasslbl.TabIndex = 1;
@@ -156,7 +156,7 @@
             // 
             this.fullnamelbl.AutoSize = true;
             this.fullnamelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fullnamelbl.Location = new System.Drawing.Point(25, 106);
+            this.fullnamelbl.Location = new System.Drawing.Point(3, 105);
             this.fullnamelbl.Name = "fullnamelbl";
             this.fullnamelbl.Size = new System.Drawing.Size(94, 20);
             this.fullnamelbl.TabIndex = 0;
