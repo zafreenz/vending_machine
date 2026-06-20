@@ -86,6 +86,12 @@
     <Compile Include="Restock.Designer.cs">
       <DependentUpon>Restock.cs</DependentUpon>
     </Compile>
+    <Compile Include="salesReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="salesReport.Designer.cs">
+      <DependentUpon>salesReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="settings_admin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +115,9 @@
     </Compile>
     <EmbeddedResource Include="Restock.resx">
       <DependentUpon>Restock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="salesReport.resx">
+      <DependentUpon>salesReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="settings_admin.resx">
       <DependentUpon>settings_admin.cs</DependentUpon>

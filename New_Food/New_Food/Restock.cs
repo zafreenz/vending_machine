@@ -227,5 +227,12 @@ namespace New_Food
             sa.Show();
             this.Hide();
         }
+
+        private void radioButton12_CheckedChanged(object sender, EventArgs e)
+        {
+            salesReport sr = new salesReport();
+            sr.Show();
+            this.Hide();
+        }
     }
 }
