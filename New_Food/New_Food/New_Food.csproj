@@ -61,6 +61,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dashboard_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dashboard_admin.Designer.cs">
+      <DependentUpon>dashboard_admin.cs</DependentUpon>
+    </Compile>
     <Compile Include="DrinkControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -87,6 +93,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="dashboard_admin.resx">
+      <DependentUpon>dashboard_admin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DrinkControl.resx">
       <DependentUpon>DrinkControl.cs</DependentUpon>
     </EmbeddedResource>
