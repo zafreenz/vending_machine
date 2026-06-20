@@ -63,19 +63,9 @@ namespace New_Food.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap cc48e52ccba0565ab5924af96a8ea9f1 {
+        internal static System.Drawing.Bitmap burger {
             get {
-                object obj = ResourceManager.GetObject("cc48e52ccba0565ab5924af96a8ea9f1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap WhatsApp_Image_2026_06_19_at_3_33_31_PM {
-            get {
-                object obj = ResourceManager.GetObject("WhatsApp Image 2026-06-19 at 3.33.31 PM", resourceCulture);
+                object obj = ResourceManager.GetObject("burger", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
