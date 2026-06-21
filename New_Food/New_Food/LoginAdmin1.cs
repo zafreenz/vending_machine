@@ -16,13 +16,14 @@ namespace New_Food
         public LoginAdmin1()
         {
             InitializeComponent();
+            textBox2.UseSystemPasswordChar = true;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             string connStr = @"Data Source=(LocalDB)\MSSQLLocalDB;
-    AttachDbFilename=C:\Users\ASUS\source\repos\vending_machine\New_Food\New_Food\VendingMachine.mdf;
-    Integrated Security=True";
+                   AttachDbFilename=|DataDirectory|\VendingMachine.mdf;
+                   Integrated Security=True";
 
             using (SqlConnection conn = new SqlConnection(connStr))
             {
@@ -47,6 +48,18 @@ namespace New_Food
                 {
                     MessageBox.Show("Username or password incorrect!");
                 }
+            }
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox2.Checked)
+            {
+                textBox2.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                textBox2.UseSystemPasswordChar = true;
             }
         }
     }
