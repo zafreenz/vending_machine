@@ -202,7 +202,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.HotPink;
+            this.panel2.BackColor = System.Drawing.Color.LightPink;
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.textBox3);
             this.panel2.Controls.Add(this.label3);
@@ -241,11 +241,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(588, 261);
+            this.label3.Location = new System.Drawing.Point(563, 261);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(125, 20);
+            this.label3.Size = new System.Drawing.Size(167, 20);
             this.label3.TabIndex = 12;
-            this.label3.Text = "Current Stock";
+            this.label3.Text = "New Current Stock";
             // 
             // numericUpDown1
             // 

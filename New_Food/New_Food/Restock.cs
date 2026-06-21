@@ -15,8 +15,8 @@ namespace New_Food
     public partial class Restock : Form
     {
         string connStr = @"Data Source=(LocalDB)\MSSQLLocalDB;
-AttachDbFilename=C:\Users\ASUS\source\repos\vending_machine\New_Food\New_Food\VendingMachine.mdf;
-Integrated Security=True";
+                   AttachDbFilename=|DataDirectory|\VendingMachine.mdf;
+                   Integrated Security=True";
 
         public Restock()
         {
@@ -202,7 +202,7 @@ Integrated Security=True";
 
                 if (rows > 0)
                 {
-                    textBox1.Text = totalStock.ToString();
+                    textBox3.Text = totalStock.ToString();
 
                     MessageBox.Show("Stock updated successfully!");
                 }
