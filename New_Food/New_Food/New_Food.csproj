@@ -12,7 +12,6 @@
 		<FileAlignment>512</FileAlignment>
 		<AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
 		<Deterministic>true</Deterministic>
-		<IsWebBootstrapper>false</IsWebBootstrapper>
 		<PublishUrl>publish\</PublishUrl>
 		<Install>true</Install>
 		<InstallFrom>Disk</InstallFrom>
@@ -25,6 +24,7 @@
 		<MapFileExtensions>true</MapFileExtensions>
 		<ApplicationRevision>0</ApplicationRevision>
 		<ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+		<IsWebBootstrapper>false</IsWebBootstrapper>
 		<UseApplicationTrust>false</UseApplicationTrust>
 		<BootstrapperEnabled>true</BootstrapperEnabled>
 	</PropertyGroup>
@@ -61,6 +61,15 @@
 		<Reference Include="System.Xml" />
 	</ItemGroup>
 	<ItemGroup>
+		<Compile Include="CartManager.cs" />
+		<Compile Include="Program.cs" />
+		<Compile Include="Properties\AssemblyInfo.cs" />
+		<Compile Include="DataSetVendingMachine.Designer.cs">
+			<AutoGen>True</AutoGen>
+			<DesignTime>True</DesignTime>
+			<DependentUpon>DataSetVendingMachine.xsd</DependentUpon>
+		</Compile>
+
 		<Compile Include="ManageDrink.cs">
 			<SubType>Form</SubType>
 		</Compile>
@@ -73,17 +82,11 @@
 		<Compile Include="ManageFood.Designer.cs">
 			<DependentUpon>ManageFood.cs</DependentUpon>
 		</Compile>
-
 		<Compile Include="dashboard_admin.cs">
 			<SubType>Form</SubType>
 		</Compile>
 		<Compile Include="dashboard_admin.Designer.cs">
 			<DependentUpon>dashboard_admin.cs</DependentUpon>
-		</Compile>
-		<Compile Include="DataSetVendingMachine.Designer.cs">
-			<AutoGen>True</AutoGen>
-			<DesignTime>True</DesignTime>
-			<DependentUpon>DataSetVendingMachine.xsd</DependentUpon>
 		</Compile>
 		<Compile Include="First.cs">
 			<SubType>Form</SubType>
@@ -97,8 +100,6 @@
 		<Compile Include="LoginAdmin1.Designer.cs">
 			<DependentUpon>LoginAdmin1.cs</DependentUpon>
 		</Compile>
-		<Compile Include="Program.cs" />
-		<Compile Include="Properties\AssemblyInfo.cs" />
 		<Compile Include="Restock.cs">
 			<SubType>Form</SubType>
 		</Compile>
@@ -118,6 +119,109 @@
 			<DependentUpon>settings_admin.cs</DependentUpon>
 		</Compile>
 
+		<Compile Include="AllDrinksMenu.cs">
+			<SubType>UserControl</SubType>
+		</Compile>
+		<Compile Include="AllDrinksMenu.Designer.cs">
+			<DependentUpon>AllDrinksMenu.cs</DependentUpon>
+		</Compile>
+		<Compile Include="AllFoodsMenu.cs">
+			<SubType>UserControl</SubType>
+		</Compile>
+		<Compile Include="AllFoodsMenu.Designer.cs">
+			<DependentUpon>AllFoodsMenu.cs</DependentUpon>
+		</Compile>
+		<Compile Include="BiscuitMenu.cs">
+			<SubType>UserControl</SubType>
+		</Compile>
+		<Compile Include="BiscuitMenu.Designer.cs">
+			<DependentUpon>BiscuitMenu.cs</DependentUpon>
+		</Compile>
+		<Compile Include="BreadMenu.cs">
+			<SubType>UserControl</SubType>
+		</Compile>
+		<Compile Include="BreadMenu.Designer.cs">
+			<DependentUpon>BreadMenu.cs</DependentUpon>
+		</Compile>
+		<Compile Include="CandiesMenu.cs">
+			<SubType>UserControl</SubType>
+		</Compile>
+		<Compile Include="CandiesMenu.Designer.cs">
+			<DependentUpon>CandiesMenu.cs</DependentUpon>
+		</Compile>
+		<Compile Include="CarbonatedMenu.cs">
+			<SubType>UserControl</SubType>
+		</Compile>
+		<Compile Include="CarbonatedMenu.Designer.cs">
+			<DependentUpon>CarbonatedMenu.cs</DependentUpon>
+		</Compile>
+		<Compile Include="JuiceMenu.cs">
+			<SubType>UserControl</SubType>
+		</Compile>
+		<Compile Include="JuiceMenu.Designer.cs">
+			<DependentUpon>JuiceMenu.cs</DependentUpon>
+		</Compile>
+		<Compile Include="Menu.cs">
+			<SubType>Form</SubType>
+		</Compile>
+		<Compile Include="Menu.Designer.cs">
+			<DependentUpon>Menu.cs</DependentUpon>
+		</Compile>
+		<Compile Include="MilkMenu.cs">
+			<SubType>UserControl</SubType>
+		</Compile>
+		<Compile Include="MilkMenu.Designer.cs">
+			<DependentUpon>MilkMenu.cs</DependentUpon>
+		</Compile>
+		<Compile Include="MineralWaterMenu.cs">
+			<SubType>UserControl</SubType>
+		</Compile>
+		<Compile Include="MineralWaterMenu.Designer.cs">
+			<DependentUpon>MineralWaterMenu.cs</DependentUpon>
+		</Compile>
+		<Compile Include="MyCart.cs">
+			<SubType>Form</SubType>
+		</Compile>
+		<Compile Include="MyCart.Designer.cs">
+			<DependentUpon>MyCart.cs</DependentUpon>
+		</Compile>
+		<Compile Include="NutsMenu.cs">
+			<SubType>UserControl</SubType>
+		</Compile>
+		<Compile Include="NutsMenu.Designer.cs">
+			<DependentUpon>NutsMenu.cs</DependentUpon>
+		</Compile>
+		<Compile Include="Payment.cs">
+			<SubType>Form</SubType>
+		</Compile>
+		<Compile Include="Payment.Designer.cs">
+			<DependentUpon>Payment.cs</DependentUpon>
+		</Compile>
+		<Compile Include="ProductDetails.cs">
+			<SubType>Form</SubType>
+		</Compile>
+		<Compile Include="ProductDetails.Designer.cs">
+			<DependentUpon>ProductDetails.cs</DependentUpon>
+		</Compile>
+		<Compile Include="Receipt.cs">
+			<SubType>Form</SubType>
+		</Compile>
+		<Compile Include="Receipt.Designer.cs">
+			<DependentUpon>Receipt.cs</DependentUpon>
+		</Compile>
+		<Compile Include="SnacksMenu.cs">
+			<SubType>UserControl</SubType>
+		</Compile>
+		<Compile Include="SnacksMenu.Designer.cs">
+			<DependentUpon>SnacksMenu.cs</DependentUpon>
+		</Compile>
+		<Compile Include="YogurtMenu.cs">
+			<SubType>UserControl</SubType>
+		</Compile>
+		<Compile Include="YogurtMenu.Designer.cs">
+			<DependentUpon>YogurtMenu.cs</DependentUpon>
+		</Compile>
+
 		<EmbeddedResource Include="ManageDrink.resx">
 			<DependentUpon>ManageDrink.cs</DependentUpon>
 		</EmbeddedResource>
@@ -133,6 +237,68 @@
 		<EmbeddedResource Include="LoginAdmin1.resx">
 			<DependentUpon>LoginAdmin1.cs</DependentUpon>
 		</EmbeddedResource>
+		<EmbeddedResource Include="Restock.resx">
+			<DependentUpon>Restock.cs</DependentUpon>
+		</EmbeddedResource>
+		<EmbeddedResource Include="salesReport.resx">
+			<DependentUpon>salesReport.cs</DependentUpon>
+		</EmbeddedResource>
+		<EmbeddedResource Include="settings_admin.resx">
+			<DependentUpon>settings_admin.cs</DependentUpon>
+		</EmbeddedResource>
+
+		<EmbeddedResource Include="AllDrinksMenu.resx">
+			<DependentUpon>AllDrinksMenu.cs</DependentUpon>
+		</EmbeddedResource>
+		<EmbeddedResource Include="AllFoodsMenu.resx">
+			<DependentUpon>AllFoodsMenu.cs</DependentUpon>
+		</EmbeddedResource>
+		<EmbeddedResource Include="BiscuitMenu.resx">
+			<DependentUpon>BiscuitMenu.cs</DependentUpon>
+		</EmbeddedResource>
+		<EmbeddedResource Include="BreadMenu.resx">
+			<DependentUpon>BreadMenu.cs</DependentUpon>
+		</EmbeddedResource>
+		<EmbeddedResource Include="CandiesMenu.resx">
+			<DependentUpon>CandiesMenu.cs</DependentUpon>
+		</EmbeddedResource>
+		<EmbeddedResource Include="CarbonatedMenu.resx">
+			<DependentUpon>CarbonatedMenu.cs</DependentUpon>
+		</EmbeddedResource>
+		<EmbeddedResource Include="JuiceMenu.resx">
+			<DependentUpon>JuiceMenu.cs</DependentUpon>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Menu.resx">
+			<DependentUpon>Menu.cs</DependentUpon>
+		</EmbeddedResource>
+		<EmbeddedResource Include="MilkMenu.resx">
+			<DependentUpon>MilkMenu.cs</DependentUpon>
+		</EmbeddedResource>
+		<EmbeddedResource Include="MineralWaterMenu.resx">
+			<DependentUpon>MineralWaterMenu.cs</DependentUpon>
+		</EmbeddedResource>
+		<EmbeddedResource Include="MyCart.resx">
+			<DependentUpon>MyCart.cs</DependentUpon>
+		</EmbeddedResource>
+		<EmbeddedResource Include="NutsMenu.resx">
+			<DependentUpon>NutsMenu.cs</DependentUpon>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Payment.resx">
+			<DependentUpon>Payment.cs</DependentUpon>
+		</EmbeddedResource>
+		<EmbeddedResource Include="ProductDetails.resx">
+			<DependentUpon>ProductDetails.cs</DependentUpon>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Receipt.resx">
+			<DependentUpon>Receipt.cs</DependentUpon>
+		</EmbeddedResource>
+		<EmbeddedResource Include="SnacksMenu.resx">
+			<DependentUpon>SnacksMenu.cs</DependentUpon>
+		</EmbeddedResource>
+		<EmbeddedResource Include="YogurtMenu.resx">
+			<DependentUpon>YogurtMenu.cs</DependentUpon>
+		</EmbeddedResource>
+
 		<EmbeddedResource Include="Properties\Resources.resx">
 			<Generator>ResXFileCodeGenerator</Generator>
 			<LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -143,15 +309,16 @@
 			<DependentUpon>Resources.resx</DependentUpon>
 			<DesignTime>True</DesignTime>
 		</Compile>
-		<EmbeddedResource Include="Restock.resx">
-			<DependentUpon>Restock.cs</DependentUpon>
-		</EmbeddedResource>
-		<EmbeddedResource Include="salesReport.resx">
-			<DependentUpon>salesReport.cs</DependentUpon>
-		</EmbeddedResource>
-		<EmbeddedResource Include="settings_admin.resx">
-			<DependentUpon>settings_admin.cs</DependentUpon>
-		</EmbeddedResource>
+		<None Include="Properties\Settings.settings">
+			<Generator>SettingsSingleFileGenerator</Generator>
+			<LastGenOutput>Settings.Designer.cs</LastGenOutput>
+		</None>
+		<Compile Include="Properties\Settings.Designer.cs">
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Settings.settings</DependentUpon>
+			<DesignTimeSharedInput>True</DesignTimeSharedInput>
+		</Compile>
+
 		<None Include="DataSetVendingMachine.xsc">
 			<DependentUpon>DataSetVendingMachine.xsd</DependentUpon>
 		</None>
@@ -163,20 +330,7 @@
 		<None Include="DataSetVendingMachine.xss">
 			<DependentUpon>DataSetVendingMachine.xsd</DependentUpon>
 		</None>
-		<None Include="Properties\Settings.settings">
-			<Generator>SettingsSingleFileGenerator</Generator>
-			<LastGenOutput>Settings.Designer.cs</LastGenOutput>
-		</None>
-		<Compile Include="Properties\Settings.Designer.cs">
-			<AutoGen>True</AutoGen>
-			<DependentUpon>Settings.settings</DependentUpon>
-			<DesignTimeSharedInput>True</DesignTimeSharedInput>
-		</Compile>
-	</ItemGroup>
-	<ItemGroup>
-		<None Include="App.config" />
-	</ItemGroup>
-	<ItemGroup>
+
 		<Content Include="Images\Biscuit1.png" />
 		<Content Include="Images\Biscuit10.png" />
 		<Content Include="Images\Biscuit2.png" />
@@ -267,13 +421,272 @@
 		<None Include="Resources\cc48e52ccba0565ab5924af96a8ea9f11.jpg" />
 		<Content Include="Resources\WhatsApp Image 2026-06-19 at 3.33.31 PM.jpeg" />
 
-		<Content Include="VendingMachine.mdf">
+		<Content Include="ListItem\Biscuit1.png">
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Biscuit10.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Biscuit2.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Biscuit3.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Biscuit4.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Biscuit5.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Biscuit6.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Biscuit7.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Biscuit8.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Biscuit9.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Bread1.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Bread2.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Bread3.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Bread4.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Bread5.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Bread6.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Bread7.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Candies1.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Candies2.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Candies3.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Candies4.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Candies5.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Candies6.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Candies7.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Candies8.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Candies9.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Carbonated1.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Carbonated10.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Carbonated11.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Carbonated12.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Carbonated2.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Carbonated3.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Carbonated4.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Carbonated5.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Carbonated6.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Carbonated7.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Carbonated8.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Carbonated9.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Juice1.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Juice2.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Juice3.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Juice4.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Juice5.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Juice6.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Juice7.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Milk1.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Milk2.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Milk3.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Milk4.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Milk5.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Milk6.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Milk7.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Milk8.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Milk9.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Nuts1.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Nuts2.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Nuts3.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Nuts4.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Nuts5.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Nuts6.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Nuts7.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Snacks1.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Snacks10.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Snacks11.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Snacks12.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Snacks2.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Snacks3.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Snacks4.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Snacks5.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Snacks6.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Snacks7.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Snacks8.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Snacks9.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Water1.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Water2.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Water3.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Water4.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Yogurt1.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Yogurt2.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Yogurt3.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Yogurt4.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Yogurt5.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Yogurt6.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Yogurt7.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="ListItem\Yogurt8.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+
+		<Content Include="VendingMachine.mdf">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		</Content>
 		<Content Include="VendingMachine_log.ldf">
-			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 			<DependentUpon>VendingMachine.mdf</DependentUpon>
 		</Content>
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="App.config" />
 	</ItemGroup>
 	<ItemGroup>
 		<BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
