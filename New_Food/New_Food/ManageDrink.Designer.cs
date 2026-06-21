@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.welcomeadminLbl = new System.Windows.Forms.Label();
@@ -41,18 +42,15 @@
             this.radioButton8 = new System.Windows.Forms.RadioButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnAdd = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.LightPink;
-            this.panel2.Controls.Add(this.btnAdd);
             this.panel2.Controls.Add(this.dataGridView1);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.comboBox1);
@@ -60,6 +58,18 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(744, 424);
             this.panel2.TabIndex = 11;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(42, 85);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(659, 240);
+            this.dataGridView1.TabIndex = 10;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label1
             // 
@@ -201,30 +211,6 @@
             this.panel1.Size = new System.Drawing.Size(200, 477);
             this.panel1.TabIndex = 9;
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(42, 85);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(659, 240);
-            this.dataGridView1.TabIndex = 10;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.BackColor = System.Drawing.Color.White;
-            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.ForeColor = System.Drawing.Color.Black;
-            this.btnAdd.Location = new System.Drawing.Point(74, 356);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(135, 33);
-            this.btnAdd.TabIndex = 11;
-            this.btnAdd.Text = "+ Add New Drink";
-            this.btnAdd.UseVisualStyleBackColor = false;
-            // 
             // ManageDrink
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -238,10 +224,10 @@
             this.Text = "ManageDrink";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -261,7 +247,6 @@
         private System.Windows.Forms.RadioButton radioButton8;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

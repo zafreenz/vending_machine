@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnAdd = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -52,7 +51,6 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.LightPink;
-            this.panel2.Controls.Add(this.btnAdd);
             this.panel2.Controls.Add(this.dataGridView1);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.comboBox1);
@@ -60,18 +58,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(744, 424);
             this.panel2.TabIndex = 14;
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.BackColor = System.Drawing.Color.White;
-            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.ForeColor = System.Drawing.Color.Black;
-            this.btnAdd.Location = new System.Drawing.Point(74, 356);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(135, 33);
-            this.btnAdd.TabIndex = 11;
-            this.btnAdd.Text = "+ Add New Food";
-            this.btnAdd.UseVisualStyleBackColor = false;
             // 
             // dataGridView1
             // 
@@ -249,7 +235,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBox1;
