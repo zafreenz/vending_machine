@@ -1,3 +1,8 @@
+# Visual Studio
 .vs/
 bin/
 obj/
+
+# logs / temp files
+*.log
+UpgradeLog2.htm
