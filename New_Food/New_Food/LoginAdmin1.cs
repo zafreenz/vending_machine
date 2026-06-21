@@ -62,5 +62,12 @@ namespace New_Food
                 textBox2.UseSystemPasswordChar = true;
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            First f1 = new First();
+            f1.Show();
+            this.Hide();
+        }
     }
 }

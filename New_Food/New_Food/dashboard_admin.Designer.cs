@@ -40,7 +40,6 @@
             this.lblSales = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.lblLowStock = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.welcomeadminLbl = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -52,6 +51,7 @@
             this.radioButton13 = new System.Windows.Forms.RadioButton();
             this.radioButton14 = new System.Windows.Forms.RadioButton();
             this.radioButton8 = new System.Windows.Forms.RadioButton();
+            this.listBoxLowStock = new System.Windows.Forms.ListBox();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -164,6 +164,7 @@
             this.lblSales.Size = new System.Drawing.Size(122, 54);
             this.lblSales.TabIndex = 4;
             this.lblSales.Text = "RM0";
+            this.lblSales.Click += new System.EventHandler(this.lblSales_Click);
             // 
             // label8
             // 
@@ -178,22 +179,12 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.LightPink;
-            this.panel5.Controls.Add(this.lblLowStock);
+            this.panel5.Controls.Add(this.listBoxLowStock);
             this.panel5.Controls.Add(this.label11);
             this.panel5.Location = new System.Drawing.Point(662, 291);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(308, 198);
             this.panel5.TabIndex = 2;
-            // 
-            // lblLowStock
-            // 
-            this.lblLowStock.AutoSize = true;
-            this.lblLowStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLowStock.Location = new System.Drawing.Point(113, 63);
-            this.lblLowStock.Name = "lblLowStock";
-            this.lblLowStock.Size = new System.Drawing.Size(83, 91);
-            this.lblLowStock.TabIndex = 4;
-            this.lblLowStock.Text = "0";
             // 
             // label11
             // 
@@ -328,6 +319,19 @@
             this.radioButton8.Text = "Dashboard";
             this.radioButton8.UseVisualStyleBackColor = true;
             // 
+            // listBoxLowStock
+            // 
+            this.listBoxLowStock.BackColor = System.Drawing.Color.Pink;
+            this.listBoxLowStock.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listBoxLowStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxLowStock.FormattingEnabled = true;
+            this.listBoxLowStock.ItemHeight = 20;
+            this.listBoxLowStock.Location = new System.Drawing.Point(8, 48);
+            this.listBoxLowStock.Name = "listBoxLowStock";
+            this.listBoxLowStock.Size = new System.Drawing.Size(296, 140);
+            this.listBoxLowStock.TabIndex = 4;
+            this.listBoxLowStock.SelectedIndexChanged += new System.EventHandler(this.listBoxLowStock_SelectedIndexChanged);
+            // 
             // dashboard_admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -373,7 +377,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lblSales;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label lblLowStock;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel6;
@@ -384,5 +387,6 @@
         private System.Windows.Forms.RadioButton radioButton13;
         private System.Windows.Forms.RadioButton radioButton14;
         private System.Windows.Forms.RadioButton radioButton8;
+        private System.Windows.Forms.ListBox listBoxLowStock;
     }
 }

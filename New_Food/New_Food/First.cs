@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace New_Food
 {
-    public partial class Form1 : Form
+    public partial class First : Form
     {
-        public Form1()
+        public First()
         {
             InitializeComponent();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            LoginAdmin1 la = new LoginAdmin1();
+            la.Show();
+            this.Hide();
         }
     }
 }

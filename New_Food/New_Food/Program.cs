@@ -16,7 +16,7 @@ namespace New_Food
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginAdmin1());
+            Application.Run(new First());
         }
     }
 }
