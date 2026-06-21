@@ -1,0 +1,53 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace New_Food
+{
+    public partial class Receipt : Form
+    {
+        private int secondsLeft = 15;
+        public Receipt()
+        {
+            InitializeComponent();
+        }
+
+        private void lblTQ_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void countdownTimer_Tick(object sender, EventArgs e)
+        {
+            secondsLeft--;
+
+            if (secondsLeft > 0)
+            {
+                lblCountdown.Text = $"Returning to home in {secondsLeft} seconds...";
+            }
+            else
+            {
+                countdownTimer.Stop();
+
+                // MainMenu home = new MainMenu();
+                // home.Show();
+
+                this.Close();
+            }
+        }
+
+        private void Receipt_Load(object sender, EventArgs e)
+        {
+            countdownTimer.Interval = 1000;
+            countdownTimer.Start();
+
+            lblCountdown.Text = $"Returning to home in {secondsLeft} seconds...";
+        }
+    }
+}
