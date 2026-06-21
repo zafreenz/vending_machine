@@ -72,6 +72,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetVendingMachine.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginAdmin1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +106,9 @@
     </Compile>
     <EmbeddedResource Include="dashboard_admin.resx">
       <DependentUpon>dashboard_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginAdmin1.resx">
       <DependentUpon>LoginAdmin1.cs</DependentUpon>
@@ -221,6 +230,7 @@
     <Content Include="Images\Snacks7.png" />
     <Content Include="Images\Snacks8.png" />
     <Content Include="Images\Snacks9.png" />
+    <None Include="Images\VM.jpeg" />
     <Content Include="Images\Water1.png" />
     <Content Include="Images\Water2.png" />
     <Content Include="Images\Water3.png" />
