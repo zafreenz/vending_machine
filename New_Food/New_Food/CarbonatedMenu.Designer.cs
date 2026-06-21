@@ -119,7 +119,6 @@
             // 
             // CarbonatedMenuLayout
             // 
-            this.CarbonatedMenuLayout.AutoScroll = true;
             this.CarbonatedMenuLayout.Controls.Add(this.Carbonated1GB);
             this.CarbonatedMenuLayout.Controls.Add(this.Carbonated2GB);
             this.CarbonatedMenuLayout.Controls.Add(this.Carbonated3GB);
@@ -132,10 +131,11 @@
             this.CarbonatedMenuLayout.Controls.Add(this.Carbonated10GB);
             this.CarbonatedMenuLayout.Controls.Add(this.Carbonated11GB);
             this.CarbonatedMenuLayout.Controls.Add(this.Carbonated12GB);
-            this.CarbonatedMenuLayout.Location = new System.Drawing.Point(111, 76);
+            this.CarbonatedMenuLayout.Location = new System.Drawing.Point(3, 0);
             this.CarbonatedMenuLayout.Name = "CarbonatedMenuLayout";
-            this.CarbonatedMenuLayout.Size = new System.Drawing.Size(833, 444);
+            this.CarbonatedMenuLayout.Size = new System.Drawing.Size(833, 1101);
             this.CarbonatedMenuLayout.TabIndex = 0;
+            this.CarbonatedMenuLayout.Paint += new System.Windows.Forms.PaintEventHandler(this.CarbonatedMenuLayout_Paint);
             // 
             // Carbonated1GB
             // 
@@ -168,6 +168,7 @@
             this.button1.TabIndex = 3;
             this.button1.Text = "SELECT";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label3
             // 
@@ -220,6 +221,7 @@
             this.button2.TabIndex = 4;
             this.button2.Text = "SELECT";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label4
             // 
@@ -272,6 +274,7 @@
             this.button3.TabIndex = 5;
             this.button3.Text = "SELECT";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label6
             // 
@@ -324,6 +327,7 @@
             this.button4.TabIndex = 7;
             this.button4.Text = "SELECT";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label5
             // 
@@ -376,6 +380,7 @@
             this.button5.TabIndex = 5;
             this.button5.Text = "SELECT";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // SevenUplbl
             // 
@@ -428,6 +433,7 @@
             this.button6.TabIndex = 8;
             this.button6.Text = "SELECT";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // MountainDewlbl
             // 
@@ -480,6 +486,7 @@
             this.button7.TabIndex = 11;
             this.button7.Text = "SELECT";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // MonsterOrilbl
             // 
@@ -532,6 +539,7 @@
             this.button8.TabIndex = 14;
             this.button8.Text = "SELECT";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // RedBulllbl
             // 
@@ -584,6 +592,7 @@
             this.button9.TabIndex = 5;
             this.button9.Text = "SELECT";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // label15
             // 
@@ -636,6 +645,7 @@
             this.button10.TabIndex = 5;
             this.button10.Text = "SELECT";
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // label17
             // 
@@ -678,6 +688,7 @@
             this.button11.TabIndex = 5;
             this.button11.Text = "SELECT";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // label19
             // 
@@ -740,6 +751,7 @@
             this.button12.TabIndex = 5;
             this.button12.Text = "SELECT";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // label21
             // 
@@ -767,7 +779,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.CarbonatedMenuLayout);
             this.Name = "CarbonatedMenu";
-            this.Size = new System.Drawing.Size(1076, 641);
+            this.Size = new System.Drawing.Size(3000, 3000);
             this.CarbonatedMenuLayout.ResumeLayout(false);
             this.Carbonated1GB.ResumeLayout(false);
             this.Carbonated1GB.PerformLayout();

@@ -91,7 +91,6 @@
             // 
             // YogurtMenuLayout
             // 
-            this.YogurtMenuLayout.AutoScroll = true;
             this.YogurtMenuLayout.Controls.Add(this.Yogurt1GB);
             this.YogurtMenuLayout.Controls.Add(this.Yogurt2GB);
             this.YogurtMenuLayout.Controls.Add(this.Yogurt3GB);
@@ -100,9 +99,9 @@
             this.YogurtMenuLayout.Controls.Add(this.Yogurt6GB);
             this.YogurtMenuLayout.Controls.Add(this.Yogurt7GB);
             this.YogurtMenuLayout.Controls.Add(this.Yogurt8GB);
-            this.YogurtMenuLayout.Location = new System.Drawing.Point(112, 89);
+            this.YogurtMenuLayout.Location = new System.Drawing.Point(3, 3);
             this.YogurtMenuLayout.Name = "YogurtMenuLayout";
-            this.YogurtMenuLayout.Size = new System.Drawing.Size(833, 444);
+            this.YogurtMenuLayout.Size = new System.Drawing.Size(833, 768);
             this.YogurtMenuLayout.TabIndex = 0;
             // 
             // Yogurt1GB
@@ -136,6 +135,7 @@
             this.button33.TabIndex = 5;
             this.button33.Text = "SELECT";
             this.button33.UseVisualStyleBackColor = true;
+            this.button33.Click += new System.EventHandler(this.button33_Click);
             // 
             // MixedBerrieslbl
             // 
@@ -188,6 +188,7 @@
             this.button34.TabIndex = 8;
             this.button34.Text = "SELECT";
             this.button34.UseVisualStyleBackColor = true;
+            this.button34.Click += new System.EventHandler(this.button34_Click);
             // 
             // Strawberrylbl
             // 
@@ -240,6 +241,7 @@
             this.button35.TabIndex = 11;
             this.button35.Text = "SELECT";
             this.button35.UseVisualStyleBackColor = true;
+            this.button35.Click += new System.EventHandler(this.button35_Click);
             // 
             // TropicanaMixedlbl
             // 
@@ -292,6 +294,7 @@
             this.button36.TabIndex = 3;
             this.button36.Text = "SELECT";
             this.button36.UseVisualStyleBackColor = true;
+            this.button36.Click += new System.EventHandler(this.button36_Click);
             // 
             // label37
             // 
@@ -344,6 +347,7 @@
             this.button37.TabIndex = 4;
             this.button37.Text = "SELECT";
             this.button37.UseVisualStyleBackColor = true;
+            this.button37.Click += new System.EventHandler(this.button37_Click);
             // 
             // label38
             // 
@@ -396,6 +400,7 @@
             this.button38.TabIndex = 5;
             this.button38.Text = "SELECT";
             this.button38.UseVisualStyleBackColor = true;
+            this.button38.Click += new System.EventHandler(this.button38_Click);
             // 
             // label39
             // 
@@ -448,6 +453,7 @@
             this.button39.TabIndex = 7;
             this.button39.Text = "SELECT";
             this.button39.UseVisualStyleBackColor = true;
+            this.button39.Click += new System.EventHandler(this.button39_Click);
             // 
             // label40
             // 
@@ -500,6 +506,7 @@
             this.button40.TabIndex = 5;
             this.button40.Text = "SELECT";
             this.button40.UseVisualStyleBackColor = true;
+            this.button40.Click += new System.EventHandler(this.button40_Click);
             // 
             // YogurtLycheelbl
             // 
@@ -527,7 +534,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.YogurtMenuLayout);
             this.Name = "YogurtMenu";
-            this.Size = new System.Drawing.Size(1066, 653);
+            this.Size = new System.Drawing.Size(1066, 3000);
             this.Load += new System.EventHandler(this.YogurtMenu_Load);
             this.YogurtMenuLayout.ResumeLayout(false);
             this.Yogurt1GB.ResumeLayout(false);

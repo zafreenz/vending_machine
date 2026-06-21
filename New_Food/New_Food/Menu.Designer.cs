@@ -45,21 +45,36 @@
             this.radioButton11 = new System.Windows.Forms.RadioButton();
             this.radioButton12 = new System.Windows.Forms.RadioButton();
             this.tabFoods = new System.Windows.Forms.TabPage();
-            this.flowLayoutDisplay1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.ListTab = new System.Windows.Forms.TabControl();
             this.tabDrinks = new System.Windows.Forms.TabPage();
+            this.button2 = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.allFoodsMenu1 = new New_Food.AllFoodsMenu();
+            this.biscuitMenu1 = new New_Food.BiscuitMenu();
+            this.nutsMenu1 = new New_Food.NutsMenu();
+            this.candiesMenu1 = new New_Food.CandiesMenu();
+            this.breadMenu1 = new New_Food.BreadMenu();
             this.snacksMenu1 = new New_Food.SnacksMenu();
+            this.allDrinksMenu1 = new New_Food.AllDrinksMenu();
+            this.yogurtMenu1 = new New_Food.YogurtMenu();
+            this.mineralWaterMenu1 = new New_Food.MineralWaterMenu();
+            this.milkMenu1 = new New_Food.MilkMenu();
+            this.juiceMenu1 = new New_Food.JuiceMenu();
+            this.carbonatedMenu1 = new New_Food.CarbonatedMenu();
             this.panelFilter1.SuspendLayout();
             this.panelFilter2.SuspendLayout();
             this.tabFoods.SuspendLayout();
-            this.flowLayoutDisplay1.SuspendLayout();
+            this.flowLayoutPanel2.SuspendLayout();
             this.ListTab.SuspendLayout();
             this.tabDrinks.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelFilter1
             // 
+            this.panelFilter1.BackColor = System.Drawing.Color.Pink;
             this.panelFilter1.Controls.Add(this.label1);
             this.panelFilter1.Controls.Add(this.radioButton1);
             this.panelFilter1.Controls.Add(this.radioButton2);
@@ -70,9 +85,9 @@
             this.panelFilter1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.panelFilter1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelFilter1.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.panelFilter1.Location = new System.Drawing.Point(0, 0);
+            this.panelFilter1.Location = new System.Drawing.Point(11, 0);
             this.panelFilter1.Name = "panelFilter1";
-            this.panelFilter1.Size = new System.Drawing.Size(150, 444);
+            this.panelFilter1.Size = new System.Drawing.Size(150, 374);
             this.panelFilter1.TabIndex = 3;
             // 
             // label1
@@ -94,6 +109,7 @@
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "All";
             this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged_1);
             // 
             // radioButton2
             // 
@@ -117,6 +133,7 @@
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "Bread";
             this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
             // radioButton4
             // 
@@ -128,6 +145,7 @@
             this.radioButton4.TabStop = true;
             this.radioButton4.Text = "Candies";
             this.radioButton4.UseVisualStyleBackColor = true;
+            this.radioButton4.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
             // 
             // radioButton5
             // 
@@ -139,6 +157,7 @@
             this.radioButton5.TabStop = true;
             this.radioButton5.Text = "Nuts";
             this.radioButton5.UseVisualStyleBackColor = true;
+            this.radioButton5.CheckedChanged += new System.EventHandler(this.radioButton5_CheckedChanged);
             // 
             // radioButton6
             // 
@@ -150,9 +169,12 @@
             this.radioButton6.TabStop = true;
             this.radioButton6.Text = "Biscuits";
             this.radioButton6.UseVisualStyleBackColor = true;
+            this.radioButton6.CheckedChanged += new System.EventHandler(this.radioButton6_CheckedChanged);
             // 
             // panelFilter2
             // 
+            this.panelFilter2.BackColor = System.Drawing.Color.Pink;
+            this.panelFilter2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panelFilter2.Controls.Add(this.label2);
             this.panelFilter2.Controls.Add(this.radioButton7);
             this.panelFilter2.Controls.Add(this.radioButton8);
@@ -163,7 +185,7 @@
             this.panelFilter2.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.panelFilter2.Location = new System.Drawing.Point(0, 0);
             this.panelFilter2.Name = "panelFilter2";
-            this.panelFilter2.Size = new System.Drawing.Size(150, 444);
+            this.panelFilter2.Size = new System.Drawing.Size(150, 372);
             this.panelFilter2.TabIndex = 4;
             this.panelFilter2.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
@@ -186,6 +208,7 @@
             this.radioButton7.TabStop = true;
             this.radioButton7.Text = "All";
             this.radioButton7.UseVisualStyleBackColor = true;
+            this.radioButton7.CheckedChanged += new System.EventHandler(this.radioButton7_CheckedChanged);
             // 
             // radioButton8
             // 
@@ -197,6 +220,7 @@
             this.radioButton8.TabStop = true;
             this.radioButton8.Text = "Carbonated";
             this.radioButton8.UseVisualStyleBackColor = true;
+            this.radioButton8.CheckedChanged += new System.EventHandler(this.radioButton8_CheckedChanged);
             // 
             // radioButton9
             // 
@@ -208,6 +232,7 @@
             this.radioButton9.TabStop = true;
             this.radioButton9.Text = "Juices";
             this.radioButton9.UseVisualStyleBackColor = true;
+            this.radioButton9.CheckedChanged += new System.EventHandler(this.radioButton9_CheckedChanged);
             // 
             // radioButton10
             // 
@@ -219,6 +244,7 @@
             this.radioButton10.TabStop = true;
             this.radioButton10.Text = "Milk";
             this.radioButton10.UseVisualStyleBackColor = true;
+            this.radioButton10.CheckedChanged += new System.EventHandler(this.radioButton10_CheckedChanged);
             // 
             // radioButton11
             // 
@@ -230,6 +256,7 @@
             this.radioButton11.TabStop = true;
             this.radioButton11.Text = "Mineral Water";
             this.radioButton11.UseVisualStyleBackColor = true;
+            this.radioButton11.CheckedChanged += new System.EventHandler(this.radioButton11_CheckedChanged);
             // 
             // radioButton12
             // 
@@ -241,10 +268,14 @@
             this.radioButton12.TabStop = true;
             this.radioButton12.Text = "Yogurt";
             this.radioButton12.UseVisualStyleBackColor = true;
+            this.radioButton12.CheckedChanged += new System.EventHandler(this.radioButton12_CheckedChanged);
             // 
             // tabFoods
             // 
-            this.tabFoods.Controls.Add(this.flowLayoutDisplay1);
+            this.tabFoods.AutoScroll = true;
+            this.tabFoods.BackColor = System.Drawing.Color.Transparent;
+            this.tabFoods.Controls.Add(this.button1);
+            this.tabFoods.Controls.Add(this.flowLayoutPanel2);
             this.tabFoods.Controls.Add(this.panelFilter1);
             this.tabFoods.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabFoods.Location = new System.Drawing.Point(4, 25);
@@ -253,16 +284,28 @@
             this.tabFoods.Size = new System.Drawing.Size(982, 444);
             this.tabFoods.TabIndex = 0;
             this.tabFoods.Text = "Foods";
-            this.tabFoods.UseVisualStyleBackColor = true;
             // 
-            // flowLayoutDisplay1
+            // button1
             // 
-            this.flowLayoutDisplay1.AutoScroll = true;
-            this.flowLayoutDisplay1.Controls.Add(this.snacksMenu1);
-            this.flowLayoutDisplay1.Location = new System.Drawing.Point(150, 2);
-            this.flowLayoutDisplay1.Name = "flowLayoutDisplay1";
-            this.flowLayoutDisplay1.Size = new System.Drawing.Size(831, 442);
-            this.flowLayoutDisplay1.TabIndex = 4;
+            this.button1.Location = new System.Drawing.Point(33, 380);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(93, 29);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Cart";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.Controls.Add(this.allFoodsMenu1);
+            this.flowLayoutPanel2.Controls.Add(this.biscuitMenu1);
+            this.flowLayoutPanel2.Controls.Add(this.nutsMenu1);
+            this.flowLayoutPanel2.Controls.Add(this.candiesMenu1);
+            this.flowLayoutPanel2.Controls.Add(this.breadMenu1);
+            this.flowLayoutPanel2.Controls.Add(this.snacksMenu1);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(163, 1);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(1100, 5000);
+            this.flowLayoutPanel2.TabIndex = 4;
             // 
             // ListTab
             // 
@@ -276,6 +319,8 @@
             // 
             // tabDrinks
             // 
+            this.tabDrinks.AutoScroll = true;
+            this.tabDrinks.Controls.Add(this.button2);
             this.tabDrinks.Controls.Add(this.flowLayoutPanel1);
             this.tabDrinks.Controls.Add(this.panelFilter2);
             this.tabDrinks.Location = new System.Drawing.Point(4, 25);
@@ -286,27 +331,126 @@
             this.tabDrinks.Text = "Drinks";
             this.tabDrinks.UseVisualStyleBackColor = true;
             // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(21, 378);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(93, 29);
+            this.button2.TabIndex = 6;
+            this.button2.Text = "Cart";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.AutoSize = true;
+            this.flowLayoutPanel1.Controls.Add(this.allDrinksMenu1);
+            this.flowLayoutPanel1.Controls.Add(this.yogurtMenu1);
+            this.flowLayoutPanel1.Controls.Add(this.mineralWaterMenu1);
+            this.flowLayoutPanel1.Controls.Add(this.milkMenu1);
+            this.flowLayoutPanel1.Controls.Add(this.juiceMenu1);
+            this.flowLayoutPanel1.Controls.Add(this.carbonatedMenu1);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(149, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(833, 444);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(10314, 5000);
             this.flowLayoutPanel1.TabIndex = 5;
+            // 
+            // allFoodsMenu1
+            // 
+            this.allFoodsMenu1.Location = new System.Drawing.Point(6, 6);
+            this.allFoodsMenu1.Margin = new System.Windows.Forms.Padding(6);
+            this.allFoodsMenu1.Name = "allFoodsMenu1";
+            this.allFoodsMenu1.Size = new System.Drawing.Size(4688, 6250);
+            this.allFoodsMenu1.TabIndex = 5;
+            this.allFoodsMenu1.Load += new System.EventHandler(this.allFoodsMenu1_Load);
+            // 
+            // biscuitMenu1
+            // 
+            this.biscuitMenu1.Location = new System.Drawing.Point(6, 6268);
+            this.biscuitMenu1.Margin = new System.Windows.Forms.Padding(6);
+            this.biscuitMenu1.Name = "biscuitMenu1";
+            this.biscuitMenu1.Size = new System.Drawing.Size(4688, 4688);
+            this.biscuitMenu1.TabIndex = 4;
+            // 
+            // nutsMenu1
+            // 
+            this.nutsMenu1.Location = new System.Drawing.Point(6, 10968);
+            this.nutsMenu1.Margin = new System.Windows.Forms.Padding(6);
+            this.nutsMenu1.Name = "nutsMenu1";
+            this.nutsMenu1.Size = new System.Drawing.Size(4688, 4688);
+            this.nutsMenu1.TabIndex = 3;
+            // 
+            // candiesMenu1
+            // 
+            this.candiesMenu1.Location = new System.Drawing.Point(6, 15668);
+            this.candiesMenu1.Margin = new System.Windows.Forms.Padding(6);
+            this.candiesMenu1.Name = "candiesMenu1";
+            this.candiesMenu1.Size = new System.Drawing.Size(4688, 4688);
+            this.candiesMenu1.TabIndex = 2;
+            // 
+            // breadMenu1
+            // 
+            this.breadMenu1.Location = new System.Drawing.Point(6, 20368);
+            this.breadMenu1.Margin = new System.Windows.Forms.Padding(6);
+            this.breadMenu1.Name = "breadMenu1";
+            this.breadMenu1.Size = new System.Drawing.Size(1719, 1562);
+            this.breadMenu1.TabIndex = 1;
             // 
             // snacksMenu1
             // 
-            this.snacksMenu1.Location = new System.Drawing.Point(4, 4);
-            this.snacksMenu1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.snacksMenu1.Location = new System.Drawing.Point(5, 21941);
+            this.snacksMenu1.Margin = new System.Windows.Forms.Padding(5);
             this.snacksMenu1.Name = "snacksMenu1";
-            this.snacksMenu1.Size = new System.Drawing.Size(1066, 574);
+            this.snacksMenu1.Size = new System.Drawing.Size(3750, 3750);
             this.snacksMenu1.TabIndex = 0;
-            this.snacksMenu1.Load += new System.EventHandler(this.snacksMenu1_Load_1);
+            // 
+            // allDrinksMenu1
+            // 
+            this.allDrinksMenu1.Location = new System.Drawing.Point(3, 3);
+            this.allDrinksMenu1.Name = "allDrinksMenu1";
+            this.allDrinksMenu1.Size = new System.Drawing.Size(3000, 4000);
+            this.allDrinksMenu1.TabIndex = 5;
+            // 
+            // yogurtMenu1
+            // 
+            this.yogurtMenu1.Location = new System.Drawing.Point(3009, 3);
+            this.yogurtMenu1.Name = "yogurtMenu1";
+            this.yogurtMenu1.Size = new System.Drawing.Size(1066, 3000);
+            this.yogurtMenu1.TabIndex = 4;
+            // 
+            // mineralWaterMenu1
+            // 
+            this.mineralWaterMenu1.Location = new System.Drawing.Point(4081, 3);
+            this.mineralWaterMenu1.Name = "mineralWaterMenu1";
+            this.mineralWaterMenu1.Size = new System.Drawing.Size(1059, 642);
+            this.mineralWaterMenu1.TabIndex = 3;
+            // 
+            // milkMenu1
+            // 
+            this.milkMenu1.Location = new System.Drawing.Point(5146, 3);
+            this.milkMenu1.Name = "milkMenu1";
+            this.milkMenu1.Size = new System.Drawing.Size(1095, 3000);
+            this.milkMenu1.TabIndex = 2;
+            // 
+            // juiceMenu1
+            // 
+            this.juiceMenu1.Location = new System.Drawing.Point(6247, 3);
+            this.juiceMenu1.Name = "juiceMenu1";
+            this.juiceMenu1.Size = new System.Drawing.Size(1058, 3000);
+            this.juiceMenu1.TabIndex = 1;
+            // 
+            // carbonatedMenu1
+            // 
+            this.carbonatedMenu1.Location = new System.Drawing.Point(7311, 3);
+            this.carbonatedMenu1.Name = "carbonatedMenu1";
+            this.carbonatedMenu1.Size = new System.Drawing.Size(3000, 3000);
+            this.carbonatedMenu1.TabIndex = 0;
             // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1012, 501);
             this.Controls.Add(this.ListTab);
             this.Name = "Menu";
@@ -317,9 +461,11 @@
             this.panelFilter2.ResumeLayout(false);
             this.panelFilter2.PerformLayout();
             this.tabFoods.ResumeLayout(false);
-            this.flowLayoutDisplay1.ResumeLayout(false);
+            this.flowLayoutPanel2.ResumeLayout(false);
             this.ListTab.ResumeLayout(false);
             this.tabDrinks.ResumeLayout(false);
+            this.tabDrinks.PerformLayout();
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -344,9 +490,22 @@
         private System.Windows.Forms.TabPage tabFoods;
         private System.Windows.Forms.TabControl ListTab;
         private System.Windows.Forms.TabPage tabDrinks;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutDisplay1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private AllFoodsMenu allFoodsMenu1;
+        private BiscuitMenu biscuitMenu1;
+        private NutsMenu nutsMenu1;
+        private CandiesMenu candiesMenu1;
+        private BreadMenu breadMenu1;
         private SnacksMenu snacksMenu1;
+        private CarbonatedMenu carbonatedMenu1;
+        private JuiceMenu juiceMenu1;
+        private MilkMenu milkMenu1;
+        private MineralWaterMenu mineralWaterMenu1;
+        private YogurtMenu yogurtMenu1;
+        private AllDrinksMenu allDrinksMenu1;
     }
 }
 

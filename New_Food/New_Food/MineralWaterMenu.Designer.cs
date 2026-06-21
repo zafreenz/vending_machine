@@ -68,7 +68,7 @@
             this.MineralWaterMenuLayout.Controls.Add(this.Water2GB);
             this.MineralWaterMenuLayout.Controls.Add(this.Water3GB);
             this.MineralWaterMenuLayout.Controls.Add(this.Water4GB);
-            this.MineralWaterMenuLayout.Location = new System.Drawing.Point(111, 74);
+            this.MineralWaterMenuLayout.Location = new System.Drawing.Point(3, 3);
             this.MineralWaterMenuLayout.Name = "MineralWaterMenuLayout";
             this.MineralWaterMenuLayout.Size = new System.Drawing.Size(833, 444);
             this.MineralWaterMenuLayout.TabIndex = 0;
@@ -104,6 +104,7 @@
             this.button29.TabIndex = 3;
             this.button29.Text = "SELECT";
             this.button29.UseVisualStyleBackColor = true;
+            this.button29.Click += new System.EventHandler(this.button29_Click);
             // 
             // label30
             // 
@@ -156,6 +157,7 @@
             this.button30.TabIndex = 4;
             this.button30.Text = "SELECT";
             this.button30.UseVisualStyleBackColor = true;
+            this.button30.Click += new System.EventHandler(this.button30_Click);
             // 
             // label31
             // 
@@ -208,6 +210,7 @@
             this.button31.TabIndex = 5;
             this.button31.Text = "SELECT";
             this.button31.UseVisualStyleBackColor = true;
+            this.button31.Click += new System.EventHandler(this.button31_Click);
             // 
             // label32
             // 
@@ -260,6 +263,7 @@
             this.button32.TabIndex = 7;
             this.button32.Text = "SELECT";
             this.button32.UseVisualStyleBackColor = true;
+            this.button32.Click += new System.EventHandler(this.button32_Click);
             // 
             // label33
             // 

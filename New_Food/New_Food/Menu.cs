@@ -82,15 +82,6 @@ namespace New_Food
 
         }
 
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioButton2.Checked)
-            {
-                snacksMenu1.Visible = true;
-
-            }
-        }
-
         private void snacksMenu1_Load(object sender, EventArgs e)
         {
 
@@ -104,6 +95,216 @@ namespace New_Food
         private void snacksMenu1_Load_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void radioButton1_CheckedChanged_1(object sender, EventArgs e)
+        {
+            snacksMenu1.Visible = false;
+            breadMenu1.Visible = false;
+            candiesMenu1.Visible = false;
+            nutsMenu1.Visible = false;
+            biscuitMenu1.Visible = false;
+            allFoodsMenu1.Visible = true;
+
+            carbonatedMenu1.Visible = false;
+            juiceMenu1.Visible = false;
+            milkMenu1.Visible = false;
+            mineralWaterMenu1.Visible = false;
+            yogurtMenu1.Visible = false;
+            allDrinksMenu1.Visible = false;
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            snacksMenu1.Visible = true;
+            breadMenu1.Visible = false;
+            candiesMenu1.Visible = false;
+            nutsMenu1.Visible = false;
+            biscuitMenu1.Visible = false;
+            allFoodsMenu1.Visible = false;
+
+            carbonatedMenu1.Visible = false;
+            juiceMenu1.Visible = false;
+            milkMenu1.Visible = false;
+            mineralWaterMenu1.Visible = false;
+            yogurtMenu1.Visible = false;
+            allDrinksMenu1.Visible = false;
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            snacksMenu1.Visible = false;
+            breadMenu1.Visible = true;
+            candiesMenu1.Visible = false;
+            nutsMenu1.Visible = false;
+            biscuitMenu1.Visible = false;
+            allFoodsMenu1.Visible = false;
+
+            carbonatedMenu1.Visible = false;
+            juiceMenu1.Visible = false;
+            milkMenu1.Visible = false;
+            mineralWaterMenu1.Visible = false;
+            yogurtMenu1.Visible = false;
+            allDrinksMenu1.Visible = false;
+        }
+
+        private void radioButton4_CheckedChanged(object sender, EventArgs e)
+        {
+            snacksMenu1.Visible = false;
+            breadMenu1.Visible = false;
+            candiesMenu1.Visible = true;
+            nutsMenu1.Visible = false;
+            biscuitMenu1.Visible = false;
+            allFoodsMenu1.Visible = false;
+
+            carbonatedMenu1.Visible = false;
+            juiceMenu1.Visible = false;
+            milkMenu1.Visible = false;
+            mineralWaterMenu1.Visible = false;
+            yogurtMenu1.Visible = false;
+            allDrinksMenu1.Visible = false;
+
+        }
+
+        private void radioButton5_CheckedChanged(object sender, EventArgs e)
+        {
+            snacksMenu1.Visible = false;
+            breadMenu1.Visible = false;
+            candiesMenu1.Visible = false;
+            nutsMenu1.Visible = true;
+            biscuitMenu1.Visible = false;
+            allFoodsMenu1.Visible = false;
+
+            carbonatedMenu1.Visible = false;
+            juiceMenu1.Visible = false;
+            milkMenu1.Visible = false;
+            mineralWaterMenu1.Visible = false;
+            yogurtMenu1.Visible = false;
+            allDrinksMenu1.Visible = false;
+        }
+
+        private void radioButton6_CheckedChanged(object sender, EventArgs e)
+        {
+            snacksMenu1.Visible = false;
+            breadMenu1.Visible = false;
+            candiesMenu1.Visible = false;
+            nutsMenu1.Visible = false;
+            biscuitMenu1.Visible = true;
+            allFoodsMenu1.Visible = false;
+
+            carbonatedMenu1.Visible = false;
+            juiceMenu1.Visible = false;
+            milkMenu1.Visible = false;
+            mineralWaterMenu1.Visible = false;
+            yogurtMenu1.Visible = false;
+            allDrinksMenu1.Visible = false;
+        }
+
+        private void allFoodsMenu1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton7_CheckedChanged(object sender, EventArgs e)
+        {
+            snacksMenu1.Visible = false;
+            breadMenu1.Visible = false;
+            candiesMenu1.Visible = false;
+            nutsMenu1.Visible = false;
+            biscuitMenu1.Visible = false;
+            allFoodsMenu1.Visible = false;
+
+            carbonatedMenu1.Visible = false;
+            juiceMenu1.Visible = false;
+            milkMenu1.Visible = false;
+            mineralWaterMenu1.Visible = false;
+            yogurtMenu1.Visible = false;
+            allDrinksMenu1.Visible = true;
+        }
+
+        private void radioButton8_CheckedChanged(object sender, EventArgs e)
+        {
+            snacksMenu1.Visible = false;
+            breadMenu1.Visible = false;
+            candiesMenu1.Visible = false;
+            nutsMenu1.Visible = false;
+            biscuitMenu1.Visible = false;
+            allFoodsMenu1.Visible = false;
+
+            carbonatedMenu1.Visible = true;
+            juiceMenu1.Visible = false;
+            milkMenu1.Visible = false;
+            mineralWaterMenu1.Visible = false;
+            yogurtMenu1.Visible = false;
+            allDrinksMenu1.Visible = false;
+        }
+
+        private void radioButton9_CheckedChanged(object sender, EventArgs e)
+        {
+            snacksMenu1.Visible = false;
+            breadMenu1.Visible = false;
+            candiesMenu1.Visible = false;
+            nutsMenu1.Visible = false;
+            biscuitMenu1.Visible = false;
+            allFoodsMenu1.Visible = false;
+
+            carbonatedMenu1.Visible = false;
+            juiceMenu1.Visible = true;
+            milkMenu1.Visible = false;
+            mineralWaterMenu1.Visible = false;
+            yogurtMenu1.Visible = false;
+            allDrinksMenu1.Visible = false;
+        }
+
+        private void radioButton10_CheckedChanged(object sender, EventArgs e)
+        {
+            snacksMenu1.Visible = false;
+            breadMenu1.Visible = false;
+            candiesMenu1.Visible = false;
+            nutsMenu1.Visible = false;
+            biscuitMenu1.Visible = false;
+            allFoodsMenu1.Visible = false;
+
+            carbonatedMenu1.Visible = false;
+            juiceMenu1.Visible = false;
+            milkMenu1.Visible = true;
+            mineralWaterMenu1.Visible = false;
+            yogurtMenu1.Visible = false;
+            allDrinksMenu1.Visible = false;
+        }
+
+        private void radioButton11_CheckedChanged(object sender, EventArgs e)
+        {
+            snacksMenu1.Visible = false;
+            breadMenu1.Visible = false;
+            candiesMenu1.Visible = false;
+            nutsMenu1.Visible = false;
+            biscuitMenu1.Visible = false;
+            allFoodsMenu1.Visible = false;
+
+            carbonatedMenu1.Visible = false;
+            juiceMenu1.Visible = false;
+            milkMenu1.Visible = false;
+            mineralWaterMenu1.Visible = true;
+            yogurtMenu1.Visible = false;
+            allDrinksMenu1.Visible = false;
+        }
+
+        private void radioButton12_CheckedChanged(object sender, EventArgs e)
+        {
+            snacksMenu1.Visible = false;
+            breadMenu1.Visible = false;
+            candiesMenu1.Visible = false;
+            nutsMenu1.Visible = false;
+            biscuitMenu1.Visible = false;
+            allFoodsMenu1.Visible = false;
+
+            carbonatedMenu1.Visible = false;
+            juiceMenu1.Visible = false;
+            milkMenu1.Visible = false;
+            mineralWaterMenu1.Visible = false;
+            yogurtMenu1.Visible = true;
+            allDrinksMenu1.Visible = false;
         }
     }
 }

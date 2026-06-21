@@ -16,5 +16,94 @@ namespace New_Food
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ProductDetails pd = new ProductDetails(601);
+            pd.Show();
+            this.FindForm().Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ProductDetails pd = new ProductDetails(602);
+            pd.Show();
+            this.FindForm().Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ProductDetails pd = new ProductDetails(603);
+            pd.Show();
+            this.FindForm().Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            ProductDetails pd = new ProductDetails(604);
+            pd.Show();
+            this.FindForm().Hide();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            ProductDetails pd = new ProductDetails(605);
+            pd.Show();
+            this.FindForm().Hide();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            ProductDetails pd = new ProductDetails(606);
+            pd.Show();
+            this.FindForm().Hide();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            ProductDetails pd = new ProductDetails(607);
+            pd.Show();
+            this.FindForm().Hide();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            ProductDetails pd = new ProductDetails(608);
+            pd.Show();
+            this.FindForm().Hide();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            ProductDetails pd = new ProductDetails(609);
+            pd.Show();
+            this.FindForm().Hide();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            ProductDetails pd = new ProductDetails(610);
+            pd.Show();
+            this.FindForm().Hide();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            ProductDetails pd = new ProductDetails(611);
+            pd.Show();
+            this.FindForm().Hide();
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            ProductDetails pd = new ProductDetails(612);
+            pd.Show();
+            this.FindForm().Hide();
+        }
+
+        private void CarbonatedMenuLayout_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

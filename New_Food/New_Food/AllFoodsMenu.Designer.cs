@@ -343,7 +343,6 @@
             // 
             // AllFoodsMenuLayout
             // 
-            this.AllFoodsMenuLayout.AutoScroll = true;
             this.AllFoodsMenuLayout.Controls.Add(this.Snacks1GB);
             this.AllFoodsMenuLayout.Controls.Add(this.Snacks2GB);
             this.AllFoodsMenuLayout.Controls.Add(this.Snacks3GB);
@@ -388,9 +387,9 @@
             this.AllFoodsMenuLayout.Controls.Add(this.Biscuit7GB);
             this.AllFoodsMenuLayout.Controls.Add(this.Biscuit8GB);
             this.AllFoodsMenuLayout.Controls.Add(this.Biscuit9GB);
-            this.AllFoodsMenuLayout.Location = new System.Drawing.Point(124, 81);
+            this.AllFoodsMenuLayout.Location = new System.Drawing.Point(3, 3);
             this.AllFoodsMenuLayout.Name = "AllFoodsMenuLayout";
-            this.AllFoodsMenuLayout.Size = new System.Drawing.Size(830, 435);
+            this.AllFoodsMenuLayout.Size = new System.Drawing.Size(830, 3966);
             this.AllFoodsMenuLayout.TabIndex = 5;
             // 
             // Snacks1GB
@@ -424,6 +423,7 @@
             this.button1.TabIndex = 3;
             this.button1.Text = "SELECT";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label3
             // 
@@ -476,6 +476,7 @@
             this.button2.TabIndex = 4;
             this.button2.Text = "SELECT";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label4
             // 
@@ -528,6 +529,7 @@
             this.button3.TabIndex = 5;
             this.button3.Text = "SELECT";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label6
             // 
@@ -580,6 +582,7 @@
             this.button4.TabIndex = 7;
             this.button4.Text = "SELECT";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label5
             // 
@@ -632,6 +635,7 @@
             this.button5.TabIndex = 5;
             this.button5.Text = "SELECT";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // SuperRinglbl
             // 
@@ -684,6 +688,7 @@
             this.button6.TabIndex = 8;
             this.button6.Text = "SELECT";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // TamTamlbl
             // 
@@ -736,6 +741,7 @@
             this.button7.TabIndex = 11;
             this.button7.Text = "SELECT";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // Rotalbl
             // 
@@ -788,6 +794,7 @@
             this.button8.TabIndex = 14;
             this.button8.Text = "SELECT";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // Bikalbl
             // 
@@ -840,6 +847,7 @@
             this.button9.TabIndex = 5;
             this.button9.Text = "SELECT";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // label15
             // 
@@ -892,6 +900,7 @@
             this.button10.TabIndex = 5;
             this.button10.Text = "SELECT";
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // label17
             // 
@@ -934,6 +943,7 @@
             this.button11.TabIndex = 5;
             this.button11.Text = "SELECT";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // label19
             // 
@@ -996,6 +1006,7 @@
             this.button12.TabIndex = 5;
             this.button12.Text = "SELECT";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // label21
             // 
@@ -1048,6 +1059,7 @@
             this.button13.TabIndex = 3;
             this.button13.Text = "SELECT";
             this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
             // label1
             // 
@@ -1100,6 +1112,7 @@
             this.button14.TabIndex = 4;
             this.button14.Text = "SELECT";
             this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // label2
             // 
@@ -1152,6 +1165,7 @@
             this.button15.TabIndex = 5;
             this.button15.Text = "SELECT";
             this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // label8
             // 
@@ -1204,6 +1218,7 @@
             this.button16.TabIndex = 7;
             this.button16.Text = "SELECT";
             this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
             // label10
             // 
@@ -1256,6 +1271,7 @@
             this.button17.TabIndex = 5;
             this.button17.Text = "SELECT";
             this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
             // 
             // label12
             // 
@@ -1308,6 +1324,7 @@
             this.button18.TabIndex = 8;
             this.button18.Text = "SELECT";
             this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
             // 
             // KacangMerahlbl
             // 
@@ -1360,6 +1377,7 @@
             this.button19.TabIndex = 11;
             this.button19.Text = "SELECT";
             this.button19.UseVisualStyleBackColor = true;
+            this.button19.Click += new System.EventHandler(this.button19_Click);
             // 
             // Jagunglbl
             // 
@@ -1412,6 +1430,7 @@
             this.button20.TabIndex = 3;
             this.button20.Text = "SELECT";
             this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.button20_Click);
             // 
             // label20
             // 
@@ -1464,6 +1483,7 @@
             this.button21.TabIndex = 4;
             this.button21.Text = "SELECT";
             this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
             // label22
             // 
@@ -1516,6 +1536,7 @@
             this.button22.TabIndex = 5;
             this.button22.Text = "SELECT";
             this.button22.UseVisualStyleBackColor = true;
+            this.button22.Click += new System.EventHandler(this.button22_Click);
             // 
             // label23
             // 
@@ -1568,6 +1589,7 @@
             this.button23.TabIndex = 7;
             this.button23.Text = "SELECT";
             this.button23.UseVisualStyleBackColor = true;
+            this.button23.Click += new System.EventHandler(this.button23_Click);
             // 
             // label24
             // 
@@ -1620,6 +1642,7 @@
             this.button24.TabIndex = 5;
             this.button24.Text = "SELECT";
             this.button24.UseVisualStyleBackColor = true;
+            this.button24.Click += new System.EventHandler(this.button24_Click);
             // 
             // MnMPlbl
             // 
@@ -1672,6 +1695,7 @@
             this.button25.TabIndex = 8;
             this.button25.Text = "SELECT";
             this.button25.UseVisualStyleBackColor = true;
+            this.button25.Click += new System.EventHandler(this.button25_Click);
             // 
             // TicTaclbl
             // 
@@ -1724,6 +1748,7 @@
             this.button26.TabIndex = 11;
             this.button26.Text = "SELECT";
             this.button26.UseVisualStyleBackColor = true;
+            this.button26.Click += new System.EventHandler(this.button26_Click);
             // 
             // Mentoslbl
             // 
@@ -1776,6 +1801,7 @@
             this.button27.TabIndex = 14;
             this.button27.Text = "SELECT";
             this.button27.UseVisualStyleBackColor = true;
+            this.button27.Click += new System.EventHandler(this.button27_Click);
             // 
             // SkittlesOrilbl
             // 
@@ -1828,6 +1854,7 @@
             this.button28.TabIndex = 5;
             this.button28.Text = "SELECT";
             this.button28.UseVisualStyleBackColor = true;
+            this.button28.Click += new System.EventHandler(this.button28_Click);
             // 
             // label29
             // 
@@ -1880,6 +1907,7 @@
             this.button29.TabIndex = 3;
             this.button29.Text = "SELECT";
             this.button29.UseVisualStyleBackColor = true;
+            this.button29.Click += new System.EventHandler(this.button29_Click);
             // 
             // label30
             // 
@@ -1932,6 +1960,7 @@
             this.button30.TabIndex = 4;
             this.button30.Text = "SELECT";
             this.button30.UseVisualStyleBackColor = true;
+            this.button30.Click += new System.EventHandler(this.button30_Click);
             // 
             // label31
             // 
@@ -1984,6 +2013,7 @@
             this.button31.TabIndex = 5;
             this.button31.Text = "SELECT";
             this.button31.UseVisualStyleBackColor = true;
+            this.button31.Click += new System.EventHandler(this.button31_Click);
             // 
             // label32
             // 
@@ -2036,6 +2066,7 @@
             this.button32.TabIndex = 7;
             this.button32.Text = "SELECT";
             this.button32.UseVisualStyleBackColor = true;
+            this.button32.Click += new System.EventHandler(this.button32_Click);
             // 
             // label33
             // 
@@ -2088,6 +2119,7 @@
             this.button33.TabIndex = 5;
             this.button33.Text = "SELECT";
             this.button33.UseVisualStyleBackColor = true;
+            this.button33.Click += new System.EventHandler(this.button33_Click);
             // 
             // NaturalCocktailNutslbl
             // 
@@ -2140,6 +2172,7 @@
             this.button34.TabIndex = 8;
             this.button34.Text = "SELECT";
             this.button34.UseVisualStyleBackColor = true;
+            this.button34.Click += new System.EventHandler(this.button34_Click);
             // 
             // CapTanganNutslbl
             // 
@@ -2192,6 +2225,7 @@
             this.button35.TabIndex = 11;
             this.button35.Text = "SELECT";
             this.button35.UseVisualStyleBackColor = true;
+            this.button35.Click += new System.EventHandler(this.button35_Click);
             // 
             // Kuacilbl
             // 
@@ -2244,6 +2278,7 @@
             this.button36.TabIndex = 3;
             this.button36.Text = "SELECT";
             this.button36.UseVisualStyleBackColor = true;
+            this.button36.Click += new System.EventHandler(this.button36_Click);
             // 
             // label37
             // 
@@ -2296,6 +2331,7 @@
             this.button37.TabIndex = 4;
             this.button37.Text = "SELECT";
             this.button37.UseVisualStyleBackColor = true;
+            this.button37.Click += new System.EventHandler(this.button37_Click);
             // 
             // label38
             // 
@@ -2348,6 +2384,7 @@
             this.button38.TabIndex = 5;
             this.button38.Text = "SELECT";
             this.button38.UseVisualStyleBackColor = true;
+            this.button38.Click += new System.EventHandler(this.button38_Click);
             // 
             // label39
             // 
@@ -2400,6 +2437,7 @@
             this.button39.TabIndex = 7;
             this.button39.Text = "SELECT";
             this.button39.UseVisualStyleBackColor = true;
+            this.button39.Click += new System.EventHandler(this.button39_Click);
             // 
             // label40
             // 
@@ -2452,6 +2490,7 @@
             this.button40.TabIndex = 5;
             this.button40.Text = "SELECT";
             this.button40.UseVisualStyleBackColor = true;
+            this.button40.Click += new System.EventHandler(this.button40_Click);
             // 
             // Loackerlbl
             // 
@@ -2504,6 +2543,7 @@
             this.button41.TabIndex = 8;
             this.button41.Text = "SELECT";
             this.button41.UseVisualStyleBackColor = true;
+            this.button41.Click += new System.EventHandler(this.button41_Click);
             // 
             // Oreolbl
             // 
@@ -2556,6 +2596,7 @@
             this.button42.TabIndex = 11;
             this.button42.Text = "SELECT";
             this.button42.UseVisualStyleBackColor = true;
+            this.button42.Click += new System.EventHandler(this.button42_Click);
             // 
             // Pockylbl
             // 
@@ -2608,6 +2649,7 @@
             this.button43.TabIndex = 14;
             this.button43.Text = "SELECT";
             this.button43.UseVisualStyleBackColor = true;
+            this.button43.Click += new System.EventHandler(this.button43_Click);
             // 
             // Milolbl
             // 
@@ -2660,6 +2702,7 @@
             this.button44.TabIndex = 5;
             this.button44.Text = "SELECT";
             this.button44.UseVisualStyleBackColor = true;
+            this.button44.Click += new System.EventHandler(this.button44_Click);
             // 
             // label45
             // 
@@ -2687,7 +2730,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.AllFoodsMenuLayout);
             this.Name = "AllFoodsMenu";
-            this.Size = new System.Drawing.Size(1078, 628);
+            this.Size = new System.Drawing.Size(3000, 4000);
             this.AllFoodsMenuLayout.ResumeLayout(false);
             this.Snacks1GB.ResumeLayout(false);
             this.Snacks1GB.PerformLayout();

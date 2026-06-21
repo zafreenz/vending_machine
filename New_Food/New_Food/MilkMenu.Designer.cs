@@ -98,7 +98,6 @@
             // 
             // MilkMenuLayout
             // 
-            this.MilkMenuLayout.AutoScroll = true;
             this.MilkMenuLayout.Controls.Add(this.Milk1GB);
             this.MilkMenuLayout.Controls.Add(this.Milk2GB);
             this.MilkMenuLayout.Controls.Add(this.Milk3GB);
@@ -108,9 +107,9 @@
             this.MilkMenuLayout.Controls.Add(this.Milk7GB);
             this.MilkMenuLayout.Controls.Add(this.Milk8GB);
             this.MilkMenuLayout.Controls.Add(this.Milk9GB);
-            this.MilkMenuLayout.Location = new System.Drawing.Point(121, 77);
+            this.MilkMenuLayout.Location = new System.Drawing.Point(3, 3);
             this.MilkMenuLayout.Name = "MilkMenuLayout";
-            this.MilkMenuLayout.Size = new System.Drawing.Size(833, 444);
+            this.MilkMenuLayout.Size = new System.Drawing.Size(833, 1053);
             this.MilkMenuLayout.TabIndex = 0;
             // 
             // Milk1GB
@@ -144,6 +143,7 @@
             this.button20.TabIndex = 3;
             this.button20.Text = "SELECT";
             this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.button20_Click);
             // 
             // label20
             // 
@@ -196,6 +196,7 @@
             this.button21.TabIndex = 4;
             this.button21.Text = "SELECT";
             this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
             // label22
             // 
@@ -248,6 +249,7 @@
             this.button22.TabIndex = 5;
             this.button22.Text = "SELECT";
             this.button22.UseVisualStyleBackColor = true;
+            this.button22.Click += new System.EventHandler(this.button22_Click);
             // 
             // label23
             // 
@@ -300,6 +302,7 @@
             this.button23.TabIndex = 7;
             this.button23.Text = "SELECT";
             this.button23.UseVisualStyleBackColor = true;
+            this.button23.Click += new System.EventHandler(this.button23_Click);
             // 
             // label24
             // 
@@ -352,6 +355,7 @@
             this.button24.TabIndex = 5;
             this.button24.Text = "SELECT";
             this.button24.UseVisualStyleBackColor = true;
+            this.button24.Click += new System.EventHandler(this.button24_Click);
             // 
             // JuicyOrangeMilklbl
             // 
@@ -404,6 +408,7 @@
             this.button25.TabIndex = 8;
             this.button25.Text = "SELECT";
             this.button25.UseVisualStyleBackColor = true;
+            this.button25.Click += new System.EventHandler(this.button25_Click);
             // 
             // ChocolateMilklbl
             // 
@@ -456,6 +461,7 @@
             this.button26.TabIndex = 11;
             this.button26.Text = "SELECT";
             this.button26.UseVisualStyleBackColor = true;
+            this.button26.Click += new System.EventHandler(this.button26_Click);
             // 
             // OatsideOriginallbl
             // 
@@ -508,6 +514,7 @@
             this.button27.TabIndex = 14;
             this.button27.Text = "SELECT";
             this.button27.UseVisualStyleBackColor = true;
+            this.button27.Click += new System.EventHandler(this.button27_Click);
             // 
             // OatsideChocolatelbl
             // 
@@ -560,6 +567,7 @@
             this.button28.TabIndex = 5;
             this.button28.Text = "SELECT";
             this.button28.UseVisualStyleBackColor = true;
+            this.button28.Click += new System.EventHandler(this.button28_Click);
             // 
             // label29
             // 
@@ -587,7 +595,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.MilkMenuLayout);
             this.Name = "MilkMenu";
-            this.Size = new System.Drawing.Size(1095, 676);
+            this.Size = new System.Drawing.Size(1095, 3000);
             this.MilkMenuLayout.ResumeLayout(false);
             this.Milk1GB.ResumeLayout(false);
             this.Milk1GB.PerformLayout();

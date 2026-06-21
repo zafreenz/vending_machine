@@ -16,5 +16,54 @@ namespace New_Food
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ProductDetails pd = new ProductDetails(1001);
+            pd.Show();
+            this.FindForm().Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ProductDetails pd = new ProductDetails(1002);
+            pd.Show();
+            this.FindForm().Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ProductDetails pd = new ProductDetails(1003);
+            pd.Show();
+            this.FindForm().Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            ProductDetails pd = new ProductDetails(1004);
+            pd.Show();
+            this.FindForm().Hide();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            ProductDetails pd = new ProductDetails(1005);
+            pd.Show();
+            this.FindForm().Hide();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            ProductDetails pd = new ProductDetails(1006);
+            pd.Show();
+            this.FindForm().Hide();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            ProductDetails pd = new ProductDetails(1007);
+            pd.Show();
+            this.FindForm().Hide();
+        }
     }
 }

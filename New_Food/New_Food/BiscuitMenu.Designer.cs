@@ -98,7 +98,6 @@
             // 
             // BiscuitMenuLayout
             // 
-            this.BiscuitMenuLayout.AutoScroll = true;
             this.BiscuitMenuLayout.Controls.Add(this.Biscuit1GB);
             this.BiscuitMenuLayout.Controls.Add(this.Biscuit2GB);
             this.BiscuitMenuLayout.Controls.Add(this.Biscuit3GB);
@@ -108,9 +107,9 @@
             this.BiscuitMenuLayout.Controls.Add(this.Biscuit7GB);
             this.BiscuitMenuLayout.Controls.Add(this.Biscuit8GB);
             this.BiscuitMenuLayout.Controls.Add(this.Biscuit9GB);
-            this.BiscuitMenuLayout.Location = new System.Drawing.Point(122, 82);
+            this.BiscuitMenuLayout.Location = new System.Drawing.Point(3, 3);
             this.BiscuitMenuLayout.Name = "BiscuitMenuLayout";
-            this.BiscuitMenuLayout.Size = new System.Drawing.Size(830, 445);
+            this.BiscuitMenuLayout.Size = new System.Drawing.Size(830, 1198);
             this.BiscuitMenuLayout.TabIndex = 6;
             // 
             // Biscuit1GB
@@ -144,6 +143,7 @@
             this.button1.TabIndex = 3;
             this.button1.Text = "SELECT";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label3
             // 
@@ -196,6 +196,7 @@
             this.button2.TabIndex = 4;
             this.button2.Text = "SELECT";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label4
             // 
@@ -248,6 +249,7 @@
             this.button3.TabIndex = 5;
             this.button3.Text = "SELECT";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label6
             // 
@@ -300,6 +302,7 @@
             this.button4.TabIndex = 7;
             this.button4.Text = "SELECT";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label5
             // 
@@ -352,6 +355,7 @@
             this.button5.TabIndex = 5;
             this.button5.Text = "SELECT";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // Loackerlbl
             // 
@@ -404,6 +408,7 @@
             this.button6.TabIndex = 8;
             this.button6.Text = "SELECT";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // Oreolbl
             // 
@@ -456,6 +461,7 @@
             this.button7.TabIndex = 11;
             this.button7.Text = "SELECT";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // Pockylbl
             // 
@@ -508,6 +514,7 @@
             this.button8.TabIndex = 14;
             this.button8.Text = "SELECT";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // Milolbl
             // 
@@ -560,6 +567,7 @@
             this.button9.TabIndex = 5;
             this.button9.Text = "SELECT";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // label15
             // 
@@ -587,7 +595,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.BiscuitMenuLayout);
             this.Name = "BiscuitMenu";
-            this.Size = new System.Drawing.Size(1068, 633);
+            this.Size = new System.Drawing.Size(3000, 3000);
             this.BiscuitMenuLayout.ResumeLayout(false);
             this.Biscuit1GB.ResumeLayout(false);
             this.Biscuit1GB.PerformLayout();

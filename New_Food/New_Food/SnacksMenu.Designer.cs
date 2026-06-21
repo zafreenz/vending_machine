@@ -41,6 +41,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.Cheetoslbl = new System.Windows.Forms.Label();
             this.Snacks3GB = new System.Windows.Forms.GroupBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.Doritoslbl = new System.Windows.Forms.Label();
@@ -89,13 +90,13 @@
             this.button12 = new System.Windows.Forms.Button();
             this.label21 = new System.Windows.Forms.Label();
             this.PopCornDurianlbl = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.SnacksMenuLayout.SuspendLayout();
             this.Snacks1GB.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Snacks2GB.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.Snacks3GB.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.Snacks4GB.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.Snacks5GB.SuspendLayout();
@@ -114,7 +115,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.Snacks12GB.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // SnacksMenuLayout
@@ -132,9 +132,9 @@
             this.SnacksMenuLayout.Controls.Add(this.Snacks10GB);
             this.SnacksMenuLayout.Controls.Add(this.Snacks11GB);
             this.SnacksMenuLayout.Controls.Add(this.Snacks12GB);
-            this.SnacksMenuLayout.Location = new System.Drawing.Point(0, 0);
+            this.SnacksMenuLayout.Location = new System.Drawing.Point(3, 0);
             this.SnacksMenuLayout.Name = "SnacksMenuLayout";
-            this.SnacksMenuLayout.Size = new System.Drawing.Size(1066, 574);
+            this.SnacksMenuLayout.Size = new System.Drawing.Size(808, 1001);
             this.SnacksMenuLayout.TabIndex = 4;
             this.SnacksMenuLayout.Paint += new System.Windows.Forms.PaintEventHandler(this.SnacksMenuLayout_Paint);
             // 
@@ -225,6 +225,7 @@
             this.button2.TabIndex = 4;
             this.button2.Text = "SELECT";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label4
             // 
@@ -259,6 +260,16 @@
             this.Snacks3GB.TabStop = false;
             this.Snacks3GB.Text = "Doritos";
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(33, 45);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(130, 123);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 7;
+            this.pictureBox3.TabStop = false;
+            // 
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(51, 269);
@@ -267,6 +278,7 @@
             this.button3.TabIndex = 5;
             this.button3.Text = "SELECT";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label6
             // 
@@ -320,6 +332,7 @@
             this.button4.TabIndex = 7;
             this.button4.Text = "SELECT";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label5
             // 
@@ -347,7 +360,7 @@
             this.Snacks5GB.Controls.Add(this.button5);
             this.Snacks5GB.Controls.Add(this.SuperRinglbl);
             this.Snacks5GB.Controls.Add(this.label7);
-            this.Snacks5GB.Location = new System.Drawing.Point(795, 3);
+            this.Snacks5GB.Location = new System.Drawing.Point(3, 324);
             this.Snacks5GB.Name = "Snacks5GB";
             this.Snacks5GB.Size = new System.Drawing.Size(192, 315);
             this.Snacks5GB.TabIndex = 4;
@@ -372,6 +385,7 @@
             this.button5.TabIndex = 5;
             this.button5.Text = "SELECT";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // SuperRinglbl
             // 
@@ -399,7 +413,7 @@
             this.Snacks6GB.Controls.Add(this.button6);
             this.Snacks6GB.Controls.Add(this.TamTamlbl);
             this.Snacks6GB.Controls.Add(this.label9);
-            this.Snacks6GB.Location = new System.Drawing.Point(3, 324);
+            this.Snacks6GB.Location = new System.Drawing.Point(201, 324);
             this.Snacks6GB.Name = "Snacks6GB";
             this.Snacks6GB.Size = new System.Drawing.Size(192, 315);
             this.Snacks6GB.TabIndex = 5;
@@ -424,6 +438,7 @@
             this.button6.TabIndex = 8;
             this.button6.Text = "SELECT";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // TamTamlbl
             // 
@@ -451,7 +466,7 @@
             this.Snacks7GB.Controls.Add(this.button7);
             this.Snacks7GB.Controls.Add(this.Rotalbl);
             this.Snacks7GB.Controls.Add(this.label11);
-            this.Snacks7GB.Location = new System.Drawing.Point(201, 324);
+            this.Snacks7GB.Location = new System.Drawing.Point(399, 324);
             this.Snacks7GB.Name = "Snacks7GB";
             this.Snacks7GB.Size = new System.Drawing.Size(192, 315);
             this.Snacks7GB.TabIndex = 6;
@@ -476,6 +491,7 @@
             this.button7.TabIndex = 11;
             this.button7.Text = "SELECT";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // Rotalbl
             // 
@@ -503,12 +519,13 @@
             this.Snacks8GB.Controls.Add(this.button8);
             this.Snacks8GB.Controls.Add(this.Bikalbl);
             this.Snacks8GB.Controls.Add(this.label13);
-            this.Snacks8GB.Location = new System.Drawing.Point(399, 324);
+            this.Snacks8GB.Location = new System.Drawing.Point(597, 324);
             this.Snacks8GB.Name = "Snacks8GB";
             this.Snacks8GB.Size = new System.Drawing.Size(192, 315);
             this.Snacks8GB.TabIndex = 7;
             this.Snacks8GB.TabStop = false;
             this.Snacks8GB.Text = "Bika";
+            this.Snacks8GB.Enter += new System.EventHandler(this.Snacks8GB_Enter);
             // 
             // pictureBox8
             // 
@@ -528,6 +545,7 @@
             this.button8.TabIndex = 14;
             this.button8.Text = "SELECT";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // Bikalbl
             // 
@@ -555,7 +573,7 @@
             this.Snacks9GB.Controls.Add(this.button9);
             this.Snacks9GB.Controls.Add(this.label15);
             this.Snacks9GB.Controls.Add(this.Twistieslbl);
-            this.Snacks9GB.Location = new System.Drawing.Point(597, 324);
+            this.Snacks9GB.Location = new System.Drawing.Point(3, 645);
             this.Snacks9GB.Name = "Snacks9GB";
             this.Snacks9GB.Size = new System.Drawing.Size(192, 315);
             this.Snacks9GB.TabIndex = 8;
@@ -580,6 +598,7 @@
             this.button9.TabIndex = 5;
             this.button9.Text = "SELECT";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // label15
             // 
@@ -607,7 +626,7 @@
             this.Snacks10GB.Controls.Add(this.button10);
             this.Snacks10GB.Controls.Add(this.label17);
             this.Snacks10GB.Controls.Add(this.MomeeMonsterlbl);
-            this.Snacks10GB.Location = new System.Drawing.Point(795, 324);
+            this.Snacks10GB.Location = new System.Drawing.Point(201, 645);
             this.Snacks10GB.Name = "Snacks10GB";
             this.Snacks10GB.Size = new System.Drawing.Size(192, 315);
             this.Snacks10GB.TabIndex = 9;
@@ -632,6 +651,7 @@
             this.button10.TabIndex = 5;
             this.button10.Text = "SELECT";
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // label17
             // 
@@ -659,7 +679,7 @@
             this.Snacks11GB.Controls.Add(this.label19);
             this.Snacks11GB.Controls.Add(this.PopoMurukulbl);
             this.Snacks11GB.Controls.Add(this.pictureBox11);
-            this.Snacks11GB.Location = new System.Drawing.Point(3, 645);
+            this.Snacks11GB.Location = new System.Drawing.Point(399, 645);
             this.Snacks11GB.Name = "Snacks11GB";
             this.Snacks11GB.Size = new System.Drawing.Size(192, 315);
             this.Snacks11GB.TabIndex = 10;
@@ -674,6 +694,7 @@
             this.button11.TabIndex = 5;
             this.button11.Text = "SELECT";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // label19
             // 
@@ -711,7 +732,7 @@
             this.Snacks12GB.Controls.Add(this.button12);
             this.Snacks12GB.Controls.Add(this.label21);
             this.Snacks12GB.Controls.Add(this.PopCornDurianlbl);
-            this.Snacks12GB.Location = new System.Drawing.Point(201, 645);
+            this.Snacks12GB.Location = new System.Drawing.Point(597, 645);
             this.Snacks12GB.Name = "Snacks12GB";
             this.Snacks12GB.Size = new System.Drawing.Size(192, 315);
             this.Snacks12GB.TabIndex = 11;
@@ -736,6 +757,7 @@
             this.button12.TabIndex = 5;
             this.button12.Text = "SELECT";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // label21
             // 
@@ -757,23 +779,13 @@
             this.PopCornDurianlbl.TabIndex = 7;
             this.PopCornDurianlbl.Text = "PopCorn Durian";
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(33, 45);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(130, 123);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 7;
-            this.pictureBox3.TabStop = false;
-            // 
             // SnacksMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.SnacksMenuLayout);
             this.Name = "SnacksMenu";
-            this.Size = new System.Drawing.Size(1066, 574);
+            this.Size = new System.Drawing.Size(3000, 3000);
             this.SnacksMenuLayout.ResumeLayout(false);
             this.Snacks1GB.ResumeLayout(false);
             this.Snacks1GB.PerformLayout();
@@ -783,6 +795,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.Snacks3GB.ResumeLayout(false);
             this.Snacks3GB.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.Snacks4GB.ResumeLayout(false);
             this.Snacks4GB.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -810,7 +823,6 @@
             this.Snacks12GB.ResumeLayout(false);
             this.Snacks12GB.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }

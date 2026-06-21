@@ -84,7 +84,6 @@
             // 
             // BreadMenuLayout
             // 
-            this.BreadMenuLayout.AutoScroll = true;
             this.BreadMenuLayout.Controls.Add(this.Bread1GB);
             this.BreadMenuLayout.Controls.Add(this.Bread2GB);
             this.BreadMenuLayout.Controls.Add(this.Bread3GB);
@@ -92,9 +91,9 @@
             this.BreadMenuLayout.Controls.Add(this.Bread5GB);
             this.BreadMenuLayout.Controls.Add(this.Bread6GB);
             this.BreadMenuLayout.Controls.Add(this.Bread7GB);
-            this.BreadMenuLayout.Location = new System.Drawing.Point(123, 75);
+            this.BreadMenuLayout.Location = new System.Drawing.Point(3, 3);
             this.BreadMenuLayout.Name = "BreadMenuLayout";
-            this.BreadMenuLayout.Size = new System.Drawing.Size(830, 435);
+            this.BreadMenuLayout.Size = new System.Drawing.Size(830, 684);
             this.BreadMenuLayout.TabIndex = 5;
             // 
             // Bread1GB
@@ -128,6 +127,7 @@
             this.button1.TabIndex = 3;
             this.button1.Text = "SELECT";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label3
             // 
@@ -180,6 +180,7 @@
             this.button2.TabIndex = 4;
             this.button2.Text = "SELECT";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label4
             // 
@@ -232,6 +233,7 @@
             this.button3.TabIndex = 5;
             this.button3.Text = "SELECT";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label6
             // 
@@ -284,6 +286,7 @@
             this.button4.TabIndex = 7;
             this.button4.Text = "SELECT";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label5
             // 
@@ -336,6 +339,7 @@
             this.button5.TabIndex = 5;
             this.button5.Text = "SELECT";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // SuperRinglbl
             // 
@@ -388,6 +392,7 @@
             this.button6.TabIndex = 8;
             this.button6.Text = "SELECT";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // KacangMerahlbl
             // 
@@ -440,6 +445,7 @@
             this.button7.TabIndex = 11;
             this.button7.Text = "SELECT";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // Jagunglbl
             // 
@@ -469,7 +475,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.BreadMenuLayout);
             this.Name = "BreadMenu";
-            this.Size = new System.Drawing.Size(1112, 1184);
+            this.Size = new System.Drawing.Size(3000, 3000);
             this.BreadMenuLayout.ResumeLayout(false);
             this.Bread1GB.ResumeLayout(false);
             this.Bread1GB.PerformLayout();
