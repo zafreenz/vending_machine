@@ -159,6 +159,7 @@
             this.btnCancel.TabIndex = 10;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // gbxPayment
             // 
@@ -175,6 +176,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Pink;
             this.ClientSize = new System.Drawing.Size(1012, 501);
             this.Controls.Add(this.gbxPayment);
             this.Controls.Add(this.btnCancel);
@@ -187,6 +189,7 @@
             this.Controls.Add(this.lblSummary);
             this.Name = "Payment";
             this.Text = "Payment";
+            this.Activated += new System.EventHandler(this.Payment_Activated);
             this.Load += new System.EventHandler(this.Payment_Load);
             this.gbxPayment.ResumeLayout(false);
             this.gbxPayment.PerformLayout();

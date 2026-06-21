@@ -306,5 +306,23 @@ namespace New_Food
             yogurtMenu1.Visible = true;
             allDrinksMenu1.Visible = false;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MyCart cartForm = Application.OpenForms.OfType<MyCart>().FirstOrDefault();
+
+            if (cartForm != null)
+            {
+                cartForm.Show();
+                cartForm.BringToFront();
+            }
+            else
+            {
+                MyCart cart = new MyCart();
+                cart.Show();
+            }
+
+            this.Hide(); // tutup/sorok Menu form
+        }
     }
 }

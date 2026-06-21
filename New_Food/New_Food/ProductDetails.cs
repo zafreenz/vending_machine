@@ -15,9 +15,13 @@ namespace New_Food
     public partial class ProductDetails : Form
     {
         private int quantity = 0;
+        private decimal subtotal = 0;
+        private decimal price = 0;
+        private int productId = 0;
         public ProductDetails(int id)
         {
             InitializeComponent();
+            productId = id;
 
             SqlConnection connection = new SqlConnection(
             @"Data Source=(LocalDB)\MSSQLLocalDB;
@@ -37,7 +41,8 @@ namespace New_Food
             if (dr.Read())
             {
                 ItemName.Text = dr["productName"].ToString();
-                ItemPrice.Text = "RM " + dr["price"].ToString();
+                ItemPrice.Text = Convert.ToDecimal(dr["price"]).ToString("0.00");
+                price = Convert.ToDecimal(dr["price"]);
                 ItemCategory.Text = dr["category"].ToString();
                 ItemStock.Text = dr["stockQty"].ToString();
                 ItemWeight.Text = dr["weight"].ToString();
@@ -112,6 +117,9 @@ namespace New_Food
         {
             quantity++;
             lblQuantity.Text = quantity.ToString();
+            subtotal = quantity * price;
+            ItemTotal.Text = subtotal.ToString("0.00");
+
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -120,6 +128,37 @@ namespace New_Food
             {
                 quantity--;
                 lblQuantity.Text = quantity.ToString();
+                subtotal = quantity * price;
+                ItemTotal.Text = "RM " + subtotal.ToString("0.00");
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (quantity > 0)
+            {
+                CartManager.AddItem(productId, ItemName.Text, quantity, price);   // ← TAMBAH BARIS NI
+
+                MessageBox.Show("Item added to cart!");
+
+                Menu menuForm = Application.OpenForms.OfType<Menu>().FirstOrDefault();
+
+                if (menuForm != null)
+                {
+                    menuForm.Show();
+                    menuForm.BringToFront();
+                }
+                else
+                {
+                    Menu menu = new Menu();
+                    menu.Show();
+                }
+
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Please select quantity first.");
             }
         }
     }

@@ -59,7 +59,7 @@
             // 
             this.pictureBox1.Location = new System.Drawing.Point(69, 35);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(244, 229);
+            this.pictureBox1.Size = new System.Drawing.Size(244, 253);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -213,6 +213,7 @@
             this.button1.TabIndex = 15;
             this.button1.Text = "ADD TO CART";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -296,9 +297,9 @@
             this.ItemTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ItemTotal.Location = new System.Drawing.Point(226, 424);
             this.ItemTotal.Name = "ItemTotal";
-            this.ItemTotal.Size = new System.Drawing.Size(84, 22);
+            this.ItemTotal.Size = new System.Drawing.Size(45, 22);
             this.ItemTotal.TabIndex = 23;
-            this.ItemTotal.Text = "ItemTotal";
+            this.ItemTotal.Text = "0.00";
             this.ItemTotal.Click += new System.EventHandler(this.ItemTotal_Click);
             // 
             // ProductDetails

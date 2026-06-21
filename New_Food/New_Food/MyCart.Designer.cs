@@ -58,10 +58,12 @@
             this.colPrice,
             this.colSubtotal});
             this.dgvItem.Location = new System.Drawing.Point(112, 55);
+            this.dgvItem.MultiSelect = false;
             this.dgvItem.Name = "dgvItem";
             this.dgvItem.RowHeadersVisible = false;
             this.dgvItem.RowHeadersWidth = 51;
             this.dgvItem.RowTemplate.Height = 24;
+            this.dgvItem.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvItem.Size = new System.Drawing.Size(770, 150);
             this.dgvItem.TabIndex = 0;
             // 
@@ -183,6 +185,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Pink;
             this.ClientSize = new System.Drawing.Size(1012, 501);
             this.Controls.Add(this.lblTotalValue);
             this.Controls.Add(this.lblSubtotalValue);
@@ -195,6 +198,8 @@
             this.Controls.Add(this.dgvItem);
             this.Name = "MyCart";
             this.Text = "My Cart";
+            this.Activated += new System.EventHandler(this.MyCart_Activated);
+            this.Load += new System.EventHandler(this.MyCart_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvItem)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

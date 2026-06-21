@@ -48,6 +48,16 @@ namespace New_Food
             countdownTimer.Start();
 
             lblCountdown.Text = $"Returning to home in {secondsLeft} seconds...";
+
+            dgvItem.Rows.Clear();
+
+            foreach (var item in CartManager.Items)
+            {
+                dgvItem.Rows.Add(item.ItemName + " (x" + item.Quantity + ")", "Dispensed ✓");
+            }
+
+            // lepas dispense, clear cart sebab transaksi dah selesai
+            CartManager.Clear();
         }
     }
 }
