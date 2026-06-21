@@ -29,49 +29,76 @@ namespace New_Food
 
                 // TOTAL DRINK
                 string drinkQuery =
-"SELECT COUNT(*) FROM Product WHERE Category IN ('Carbonated','Juice','Milk','Mineral','Yogurt')";
+                @"SELECT COUNT(*)
+        FROM Product
+        WHERE Category IN ('Carbonated','Juice','Milk','Mineral','Yogurt')";
 
                 SqlCommand drinkCmd = new SqlCommand(drinkQuery, conn);
-
                 lblDrink.Text = drinkCmd.ExecuteScalar().ToString();
-
 
                 // TOTAL FOOD
                 string foodQuery =
- @"SELECT COUNT(*)
-FROM Product
-WHERE Category IN
-('Snacks','Bread','Nuts','Biscuit','Candies')";
+                @"SELECT COUNT(*)
+        FROM Product
+        WHERE Category IN ('Snacks','Bread','Nuts','Biscuit','Candies')";
 
                 SqlCommand foodCmd = new SqlCommand(foodQuery, conn);
-
                 lblFood.Text = foodCmd.ExecuteScalar().ToString();
 
-
-                // LOW STOCK
-                string lowStockQuery =
-                    "SELECT COUNT(*) FROM Product WHERE StockQty <= 5";
-
-                SqlCommand lowCmd = new SqlCommand(lowStockQuery, conn);
-
-                lblLowStock.Text = lowCmd.ExecuteScalar().ToString();
+               
 
                 // SALES TODAY
                 string salesQuery =
-@"SELECT ISNULL(SUM(total),0)
-FROM dbo.[Transaction]";
+                @"SELECT ISNULL(SUM(t.total),0)
+          FROM [Transaction] t
+          INNER JOIN Payment p
+          ON t.payment_id = p.payment_id
+          WHERE CAST(p.[date] AS DATE) = CAST(GETDATE() AS DATE)
+          AND p.status = 'Completed'";
 
                 SqlCommand salesCmd = new SqlCommand(salesQuery, conn);
 
-                lblSales.Text = "RM" + salesCmd.ExecuteScalar().ToString();
-            }
+                decimal salesToday = Convert.ToDecimal(salesCmd.ExecuteScalar());
 
+                lblSales.Text = "RM" + salesToday.ToString("0.00");
+            }
+        }
+
+        private void LoadLowStockProducts()
+        {
+            using (SqlConnection conn = new SqlConnection(connStr))
+            {
+                conn.Open();
+
+                string query = @"
+        SELECT TOP 3 productName, StockQty
+        FROM Product
+        ORDER BY StockQty ASC";
+
+                SqlCommand cmd = new SqlCommand(query, conn);
+
+                SqlDataReader dr = cmd.ExecuteReader();
+
+                listBoxLowStock.Items.Clear();
+
+                while (dr.Read())
+                {
+                    listBoxLowStock.Items.Add(
+                        dr["productName"].ToString() +
+                        " (" +
+                        dr["StockQty"].ToString() +
+                        ")");
+                }
+
+                dr.Close();
+            }
         }
         private void dashboard_admin_Load(object sender, EventArgs e)
         {
             radioButton8.Checked = true;
 
             LoadDashboard();
+            LoadLowStockProducts();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -151,6 +178,21 @@ FROM dbo.[Transaction]";
         }
 
         private void lblFood_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblSales_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblLowStock_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listBoxLowStock_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
