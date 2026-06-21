@@ -20,7 +20,8 @@ namespace New_Food
         }
         private void ManageFood_Load(object sender, EventArgs e)
         {
-            comboBox1.Items.Add("Snack");
+            radioButtonManageFood.Checked = true;
+            comboBox1.Items.Add("Snacks");
             comboBox1.Items.Add("Bread");
             comboBox1.Items.Add("Nuts");
             comboBox1.Items.Add("Biscuit");
@@ -106,9 +107,9 @@ namespace New_Food
 
         private void radioButtonDashboard_CheckedChanged(object sender, EventArgs e)
         {
-            dashboard_admin f = new dashboard_admin();
-            f.Show();
-            this.Hide();
+            //dashboard_admin f = new dashboard_admin();
+            //f.Show();
+            //this.Hide();
         }
         private void radioButtonManageDrink_CheckedChanged(object sender, EventArgs e)
         {
@@ -124,23 +125,23 @@ namespace New_Food
 
         private void radioButtonRestock_CheckedChanged(object sender, EventArgs e)
         {
-            Restock f = new Restock();
-            f.Show();
-            this.Hide();
+            //Restock f = new Restock();
+            //f.Show();
+            //this.Hide();
         }
 
         private void radioButtonSalesReport_CheckedChanged(object sender, EventArgs e)
         {
-            salesReport f = new salesReport();
-            f.Show();
-            this.Hide();
+            //salesReport f = new salesReport();
+            //f.Show();
+            //this.Hide();
         }
 
         private void radioButtonSetting_CheckedChanged(object sender, EventArgs e)
         {
-            settings_admin f = new settings_admin();
-            f.Show();
-            this.Hide();
+            //settings_admin f = new settings_admin();
+            //f.Show();
+            //this.Hide();
         }
 
         private void radioButtonLogout_CheckedChanged(object sender, EventArgs e)
