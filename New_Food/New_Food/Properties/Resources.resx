@@ -121,4 +121,7 @@
   <data name="burger" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\burger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="cc48e52ccba0565ab5924af96a8ea9f1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cc48e52ccba0565ab5924af96a8ea9f11.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

@@ -112,6 +112,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Restock.resx">
       <DependentUpon>Restock.cs</DependentUpon>
@@ -233,12 +234,13 @@
     <Content Include="Images\Yogurt7.png" />
     <Content Include="Images\Yogurt8.png" />
     <Content Include="Resources\cc48e52ccba0565ab5924af96a8ea9f1.jpg" />
+    <None Include="Resources\cc48e52ccba0565ab5924af96a8ea9f11.jpg" />
     <Content Include="Resources\WhatsApp Image 2026-06-19 at 3.33.31 PM.jpeg" />
     <Content Include="VendingMachine.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="VendingMachine_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <DependentUpon>VendingMachine.mdf</DependentUpon>
     </Content>
   </ItemGroup>

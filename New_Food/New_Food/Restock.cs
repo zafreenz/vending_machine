@@ -15,8 +15,8 @@ namespace New_Food
     public partial class Restock : Form
     {
         string connStr = @"Data Source=(LocalDB)\MSSQLLocalDB;
-                            AttachDbFilename=|DataDirectory|\VendingMachine.mdf;
-                            Integrated Security=True";
+                   AttachDbFilename=|DataDirectory|\VendingMachine.mdf;
+                   Integrated Security=True";
 
         public Restock()
         {
@@ -174,33 +174,49 @@ namespace New_Food
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (comboBox2.SelectedIndex == -1)
+            {
+                MessageBox.Show("Please select an item.");
+                return;
+            }
+
             int currentStock = Convert.ToInt32(textBox1.Text);
             int addQuantity = (int)numericUpDown1.Value;
 
             int totalStock = currentStock + addQuantity;
 
-            textBox3.Text = totalStock.ToString();
-
-            string connStr = @"Data Source=(LocalDB)\MSSQLLocalDB;
-                        AttachDbFilename=|DataDirectory|\VendingMachine.mdf;
-                        Integrated Security=True";
-
             using (SqlConnection conn = new SqlConnection(connStr))
             {
                 conn.Open();
-                string query = "UPDATE Product SET stockQty = @stock WHERE productName = @name";
+
+                string query = @"UPDATE Product
+                         SET StockQty = @stock
+                         WHERE ProductName = @name";
 
                 SqlCommand cmd = new SqlCommand(query, conn);
+
                 cmd.Parameters.AddWithValue("@stock", totalStock);
                 cmd.Parameters.AddWithValue("@name", comboBox2.Text);
-                cmd.ExecuteNonQuery();
-            }
 
-            MessageBox.Show("Stock updated!");
+                int rows = cmd.ExecuteNonQuery();
+
+                if (rows > 0)
+                {
+                    textBox3.Text = totalStock.ToString();
+
+                    MessageBox.Show("Stock updated successfully!");
+                }
+                else
+                {
+                    MessageBox.Show("Item not found in database.");
+                }
+            }
         }
 
         private void Restock_Load(object sender, EventArgs e)
         {
+            radioButton11.Checked = true;
+
             comboBox1.Items.Add("Snack");
             comboBox1.Items.Add("Bread");
             comboBox1.Items.Add("Nuts");
@@ -233,6 +249,22 @@ namespace New_Food
             salesReport sr = new salesReport();
             sr.Show();
             this.Hide();
+        }
+
+        private void radioButton14_CheckedChanged(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show(
+                "Are you sure you want to logout?",
+                "Logout Confirmation",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                this.Hide();
+                LoginAdmin1 login = new LoginAdmin1();
+                login.Show();
+            }
         }
     }
 }
