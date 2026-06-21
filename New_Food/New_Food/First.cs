@@ -23,5 +23,12 @@ namespace New_Food
             la.Show();
             this.Hide();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Menu menuForm = new Menu();
+            menuForm.Show();
+            this.Hide();
+        }
     }
 }

@@ -98,6 +98,7 @@
             this.lblCountdown.Size = new System.Drawing.Size(319, 25);
             this.lblCountdown.TabIndex = 3;
             this.lblCountdown.Text = "Returning to home in 0 second(s)....";
+            this.lblCountdown.Click += new System.EventHandler(this.lblCountdown_Click);
             // 
             // countdownTimer
             // 

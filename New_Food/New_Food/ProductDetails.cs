@@ -18,6 +18,7 @@ namespace New_Food
         private decimal subtotal = 0;
         private decimal price = 0;
         private int productId = 0;
+        private int stockQty = 0;
         public ProductDetails(int id)
         {
             InitializeComponent();
@@ -48,6 +49,7 @@ namespace New_Food
                 ItemWeight.Text = dr["weight"].ToString();
                 ItemCalories.Text = dr["calories"].ToString();
                 ItemDescription.Text = dr["description"].ToString();
+                stockQty = Convert.ToInt32(dr["stockQty"]);
 
                 //load image
                 string imageName = dr["photo"].ToString();
@@ -124,12 +126,17 @@ namespace New_Food
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (quantity > 0)
+            if (quantity < stockQty)
             {
-                quantity--;
+                quantity++;
                 lblQuantity.Text = quantity.ToString();
                 subtotal = quantity * price;
                 ItemTotal.Text = "RM " + subtotal.ToString("0.00");
+
+                if (quantity == stockQty)
+                {
+                    button4.Enabled = false;   // habis stock, disable "+"
+                }
             }
         }
 

@@ -187,5 +187,19 @@ namespace New_Food
         private void currpasstxt_TextChanged(object sender, EventArgs e) { }
         private void newpasstxt_TextChanged(object sender, EventArgs e) { }
         private void confirmpasstxt_TextChanged(object sender, EventArgs e) { }
+
+        private void radioButton9_CheckedChanged(object sender, EventArgs e)
+        {
+            ManageDrink drink = new ManageDrink();
+            drink.Show();
+            this.Hide();
+        }
+
+        private void radioButton10_CheckedChanged(object sender, EventArgs e)
+        {
+            ManageFood food = new ManageFood();
+            food.Show();
+            this.Hide();
+        }
     }
 }

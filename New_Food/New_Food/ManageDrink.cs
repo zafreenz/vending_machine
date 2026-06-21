@@ -110,9 +110,9 @@ namespace New_Food
 
         private void radioButton8_CheckedChanged(object sender, EventArgs e)
         {
-            //dashboard_admin f = new dashboard_admin();
-            //f.Show();
-            //this.Hide();
+            dashboard_admin f = new dashboard_admin();
+            f.Show();
+            this.Hide();
         }
 
         private void radioButtonManageDrink_CheckedChanged(object sender, EventArgs e)
@@ -129,28 +129,40 @@ namespace New_Food
         }
         private void radioButtonRestock_CheckedChanged(object sender, EventArgs e)
         {
-            //Restock f = new Restock();
-            //f.Show();
-            //this.Hide();
+            Restock f = new Restock();
+            f.Show();
+            this.Hide();
         }
 
         private void radioButtonSalesReport_CheckedChanged(object sender, EventArgs e)
         {
-            //salesReport f = new salesReport();
-            //f.Show();
-            //this.Hide();
+            salesReport f = new salesReport();
+            f.Show();
+            this.Hide();
         }
 
         private void radioButtonSetting_CheckedChanged(object sender, EventArgs e)
         {
-            //settings_admin f = new settings_admin();
-            //f.Show();
-            //this.Hide();
+            settings_admin f = new settings_admin();
+            f.Show();
+            this.Hide();
         }
 
         private void radioButtonLogout_CheckedChanged(object sender, EventArgs e)
         {
+            DialogResult result = MessageBox.Show(
+                "Are you sure you want to logout?",
+                "Logout Confirmation",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
 
+            if (result == DialogResult.Yes)
+            {
+                this.Hide();
+
+                LoginAdmin1 login = new LoginAdmin1();
+                login.Show();
+            }
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)

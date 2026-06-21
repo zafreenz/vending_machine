@@ -35,8 +35,8 @@ namespace New_Food
             {
                 countdownTimer.Stop();
 
-                // MainMenu home = new MainMenu();
-                // home.Show();
+                First home = new First();
+                home.Show();
 
                 this.Close();
             }
@@ -58,6 +58,11 @@ namespace New_Food
 
             // lepas dispense, clear cart sebab transaksi dah selesai
             CartManager.Clear();
+        }
+
+        private void lblCountdown_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

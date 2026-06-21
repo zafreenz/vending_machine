@@ -266,5 +266,19 @@ namespace New_Food
                 login.Show();
             }
         }
+
+        private void radioButton9_CheckedChanged(object sender, EventArgs e)
+        {
+            ManageDrink drink = new ManageDrink();
+            drink.Show();
+            this.Hide();
+        }
+
+        private void radioButton10_CheckedChanged(object sender, EventArgs e)
+        {
+            ManageFood food = new ManageFood();
+            food.Show();
+            this.Hide();
+        }
     }
 }

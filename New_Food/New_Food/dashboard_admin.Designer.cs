@@ -40,6 +40,7 @@
             this.lblSales = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.listBoxLowStock = new System.Windows.Forms.ListBox();
             this.label11 = new System.Windows.Forms.Label();
             this.welcomeadminLbl = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -51,7 +52,6 @@
             this.radioButton13 = new System.Windows.Forms.RadioButton();
             this.radioButton14 = new System.Windows.Forms.RadioButton();
             this.radioButton8 = new System.Windows.Forms.RadioButton();
-            this.listBoxLowStock = new System.Windows.Forms.ListBox();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -186,6 +186,19 @@
             this.panel5.Size = new System.Drawing.Size(308, 198);
             this.panel5.TabIndex = 2;
             // 
+            // listBoxLowStock
+            // 
+            this.listBoxLowStock.BackColor = System.Drawing.Color.Pink;
+            this.listBoxLowStock.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listBoxLowStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxLowStock.FormattingEnabled = true;
+            this.listBoxLowStock.ItemHeight = 20;
+            this.listBoxLowStock.Location = new System.Drawing.Point(8, 48);
+            this.listBoxLowStock.Name = "listBoxLowStock";
+            this.listBoxLowStock.Size = new System.Drawing.Size(296, 140);
+            this.listBoxLowStock.TabIndex = 4;
+            this.listBoxLowStock.SelectedIndexChanged += new System.EventHandler(this.listBoxLowStock_SelectedIndexChanged);
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -255,6 +268,7 @@
             this.radioButton9.TabStop = true;
             this.radioButton9.Text = "Manage Drink";
             this.radioButton9.UseVisualStyleBackColor = true;
+            this.radioButton9.CheckedChanged += new System.EventHandler(this.radioButton9_CheckedChanged);
             // 
             // radioButton10
             // 
@@ -267,6 +281,7 @@
             this.radioButton10.TabStop = true;
             this.radioButton10.Text = "Manage Food";
             this.radioButton10.UseVisualStyleBackColor = true;
+            this.radioButton10.CheckedChanged += new System.EventHandler(this.radioButton10_CheckedChanged);
             // 
             // radioButton12
             // 
@@ -318,19 +333,6 @@
             this.radioButton8.TabStop = true;
             this.radioButton8.Text = "Dashboard";
             this.radioButton8.UseVisualStyleBackColor = true;
-            // 
-            // listBoxLowStock
-            // 
-            this.listBoxLowStock.BackColor = System.Drawing.Color.Pink;
-            this.listBoxLowStock.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listBoxLowStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBoxLowStock.FormattingEnabled = true;
-            this.listBoxLowStock.ItemHeight = 20;
-            this.listBoxLowStock.Location = new System.Drawing.Point(8, 48);
-            this.listBoxLowStock.Name = "listBoxLowStock";
-            this.listBoxLowStock.Size = new System.Drawing.Size(296, 140);
-            this.listBoxLowStock.TabIndex = 4;
-            this.listBoxLowStock.SelectedIndexChanged += new System.EventHandler(this.listBoxLowStock_SelectedIndexChanged);
             // 
             // dashboard_admin
             // 

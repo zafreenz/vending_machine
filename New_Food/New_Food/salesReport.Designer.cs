@@ -118,6 +118,7 @@
             this.radioButton9.TabStop = true;
             this.radioButton9.Text = "Manage Drink";
             this.radioButton9.UseVisualStyleBackColor = true;
+            this.radioButton9.CheckedChanged += new System.EventHandler(this.radioButton9_CheckedChanged);
             // 
             // radioButton10
             // 
@@ -130,6 +131,7 @@
             this.radioButton10.TabStop = true;
             this.radioButton10.Text = "Manage Food";
             this.radioButton10.UseVisualStyleBackColor = true;
+            this.radioButton10.CheckedChanged += new System.EventHandler(this.radioButton10_CheckedChanged);
             // 
             // radioButton12
             // 
