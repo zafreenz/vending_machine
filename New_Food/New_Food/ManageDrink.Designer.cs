@@ -33,13 +33,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.welcomeadminLbl = new System.Windows.Forms.Label();
-            this.radioButton11 = new System.Windows.Forms.RadioButton();
-            this.radioButton9 = new System.Windows.Forms.RadioButton();
-            this.radioButton10 = new System.Windows.Forms.RadioButton();
-            this.radioButton12 = new System.Windows.Forms.RadioButton();
-            this.radioButton13 = new System.Windows.Forms.RadioButton();
-            this.radioButton14 = new System.Windows.Forms.RadioButton();
-            this.radioButton8 = new System.Windows.Forms.RadioButton();
+            this.radioButtonRestock = new System.Windows.Forms.RadioButton();
+            this.radioButtonManageDrink = new System.Windows.Forms.RadioButton();
+            this.radioButtonManageFood = new System.Windows.Forms.RadioButton();
+            this.radioButtonSalesReport = new System.Windows.Forms.RadioButton();
+            this.radioButtonSetting = new System.Windows.Forms.RadioButton();
+            this.radioButtonLogout = new System.Windows.Forms.RadioButton();
+            this.radioButtonDashboard = new System.Windows.Forms.RadioButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
@@ -58,6 +58,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(744, 424);
             this.panel2.TabIndex = 11;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // dataGridView1
             // 
@@ -103,100 +104,107 @@
             this.welcomeadminLbl.TabIndex = 10;
             this.welcomeadminLbl.Text = "Manage Drink";
             // 
-            // radioButton11
+            // radioButtonRestock
             // 
-            this.radioButton11.AutoSize = true;
-            this.radioButton11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton11.Location = new System.Drawing.Point(26, 219);
-            this.radioButton11.Name = "radioButton11";
-            this.radioButton11.Size = new System.Drawing.Size(129, 22);
-            this.radioButton11.TabIndex = 11;
-            this.radioButton11.TabStop = true;
-            this.radioButton11.Text = "Restock Item";
-            this.radioButton11.UseVisualStyleBackColor = true;
+            this.radioButtonRestock.AutoSize = true;
+            this.radioButtonRestock.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonRestock.Location = new System.Drawing.Point(26, 219);
+            this.radioButtonRestock.Name = "radioButtonRestock";
+            this.radioButtonRestock.Size = new System.Drawing.Size(129, 22);
+            this.radioButtonRestock.TabIndex = 11;
+            this.radioButtonRestock.TabStop = true;
+            this.radioButtonRestock.Text = "Restock Item";
+            this.radioButtonRestock.UseVisualStyleBackColor = true;
+            this.radioButtonRestock.CheckedChanged += new System.EventHandler(this.radioButtonRestock_CheckedChanged);
             // 
-            // radioButton9
+            // radioButtonManageDrink
             // 
-            this.radioButton9.AutoSize = true;
-            this.radioButton9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton9.Location = new System.Drawing.Point(26, 121);
-            this.radioButton9.Name = "radioButton9";
-            this.radioButton9.Size = new System.Drawing.Size(133, 22);
-            this.radioButton9.TabIndex = 13;
-            this.radioButton9.TabStop = true;
-            this.radioButton9.Text = "Manage Drink";
-            this.radioButton9.UseVisualStyleBackColor = true;
+            this.radioButtonManageDrink.AutoSize = true;
+            this.radioButtonManageDrink.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonManageDrink.Location = new System.Drawing.Point(26, 121);
+            this.radioButtonManageDrink.Name = "radioButtonManageDrink";
+            this.radioButtonManageDrink.Size = new System.Drawing.Size(133, 22);
+            this.radioButtonManageDrink.TabIndex = 13;
+            this.radioButtonManageDrink.TabStop = true;
+            this.radioButtonManageDrink.Text = "Manage Drink";
+            this.radioButtonManageDrink.UseVisualStyleBackColor = true;
+            this.radioButtonManageDrink.CheckedChanged += new System.EventHandler(this.radioButtonManageDrink_CheckedChanged);
             // 
-            // radioButton10
+            // radioButtonManageFood
             // 
-            this.radioButton10.AutoSize = true;
-            this.radioButton10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton10.Location = new System.Drawing.Point(26, 172);
-            this.radioButton10.Name = "radioButton10";
-            this.radioButton10.Size = new System.Drawing.Size(132, 22);
-            this.radioButton10.TabIndex = 12;
-            this.radioButton10.TabStop = true;
-            this.radioButton10.Text = "Manage Food";
-            this.radioButton10.UseVisualStyleBackColor = true;
+            this.radioButtonManageFood.AutoSize = true;
+            this.radioButtonManageFood.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonManageFood.Location = new System.Drawing.Point(26, 172);
+            this.radioButtonManageFood.Name = "radioButtonManageFood";
+            this.radioButtonManageFood.Size = new System.Drawing.Size(132, 22);
+            this.radioButtonManageFood.TabIndex = 12;
+            this.radioButtonManageFood.TabStop = true;
+            this.radioButtonManageFood.Text = "Manage Food";
+            this.radioButtonManageFood.UseVisualStyleBackColor = true;
+            this.radioButtonManageFood.CheckedChanged += new System.EventHandler(this.radioButtonManageFood_CheckedChanged);
             // 
-            // radioButton12
+            // radioButtonSalesReport
             // 
-            this.radioButton12.AutoSize = true;
-            this.radioButton12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton12.Location = new System.Drawing.Point(26, 263);
-            this.radioButton12.Name = "radioButton12";
-            this.radioButton12.Size = new System.Drawing.Size(127, 22);
-            this.radioButton12.TabIndex = 10;
-            this.radioButton12.TabStop = true;
-            this.radioButton12.Text = "Sales Report";
-            this.radioButton12.UseVisualStyleBackColor = true;
+            this.radioButtonSalesReport.AutoSize = true;
+            this.radioButtonSalesReport.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonSalesReport.Location = new System.Drawing.Point(26, 263);
+            this.radioButtonSalesReport.Name = "radioButtonSalesReport";
+            this.radioButtonSalesReport.Size = new System.Drawing.Size(127, 22);
+            this.radioButtonSalesReport.TabIndex = 10;
+            this.radioButtonSalesReport.TabStop = true;
+            this.radioButtonSalesReport.Text = "Sales Report";
+            this.radioButtonSalesReport.UseVisualStyleBackColor = true;
+            this.radioButtonSalesReport.CheckedChanged += new System.EventHandler(this.radioButtonSalesReport_CheckedChanged);
             // 
-            // radioButton13
+            // radioButtonSetting
             // 
-            this.radioButton13.AutoSize = true;
-            this.radioButton13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton13.Location = new System.Drawing.Point(26, 310);
-            this.radioButton13.Name = "radioButton13";
-            this.radioButton13.Size = new System.Drawing.Size(81, 22);
-            this.radioButton13.TabIndex = 9;
-            this.radioButton13.TabStop = true;
-            this.radioButton13.Text = "Setting";
-            this.radioButton13.UseVisualStyleBackColor = true;
+            this.radioButtonSetting.AutoSize = true;
+            this.radioButtonSetting.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonSetting.Location = new System.Drawing.Point(26, 310);
+            this.radioButtonSetting.Name = "radioButtonSetting";
+            this.radioButtonSetting.Size = new System.Drawing.Size(81, 22);
+            this.radioButtonSetting.TabIndex = 9;
+            this.radioButtonSetting.TabStop = true;
+            this.radioButtonSetting.Text = "Setting";
+            this.radioButtonSetting.UseVisualStyleBackColor = true;
+            this.radioButtonSetting.CheckedChanged += new System.EventHandler(this.radioButtonSetting_CheckedChanged);
             // 
-            // radioButton14
+            // radioButtonLogout
             // 
-            this.radioButton14.AutoSize = true;
-            this.radioButton14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton14.Location = new System.Drawing.Point(26, 353);
-            this.radioButton14.Name = "radioButton14";
-            this.radioButton14.Size = new System.Drawing.Size(81, 22);
-            this.radioButton14.TabIndex = 8;
-            this.radioButton14.TabStop = true;
-            this.radioButton14.Text = "Logout";
-            this.radioButton14.UseVisualStyleBackColor = true;
+            this.radioButtonLogout.AutoSize = true;
+            this.radioButtonLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonLogout.Location = new System.Drawing.Point(26, 353);
+            this.radioButtonLogout.Name = "radioButtonLogout";
+            this.radioButtonLogout.Size = new System.Drawing.Size(81, 22);
+            this.radioButtonLogout.TabIndex = 8;
+            this.radioButtonLogout.TabStop = true;
+            this.radioButtonLogout.Text = "Logout";
+            this.radioButtonLogout.UseVisualStyleBackColor = true;
+            this.radioButtonLogout.CheckedChanged += new System.EventHandler(this.radioButtonLogout_CheckedChanged);
             // 
-            // radioButton8
+            // radioButtonDashboard
             // 
-            this.radioButton8.AutoSize = true;
-            this.radioButton8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton8.Location = new System.Drawing.Point(26, 75);
-            this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(111, 22);
-            this.radioButton8.TabIndex = 14;
-            this.radioButton8.TabStop = true;
-            this.radioButton8.Text = "Dashboard";
-            this.radioButton8.UseVisualStyleBackColor = true;
+            this.radioButtonDashboard.AutoSize = true;
+            this.radioButtonDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDashboard.Location = new System.Drawing.Point(26, 75);
+            this.radioButtonDashboard.Name = "radioButtonDashboard";
+            this.radioButtonDashboard.Size = new System.Drawing.Size(111, 22);
+            this.radioButtonDashboard.TabIndex = 14;
+            this.radioButtonDashboard.TabStop = true;
+            this.radioButtonDashboard.Text = "Dashboard";
+            this.radioButtonDashboard.UseVisualStyleBackColor = true;
+            this.radioButtonDashboard.CheckedChanged += new System.EventHandler(this.radioButton8_CheckedChanged);
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.radioButton11);
-            this.panel3.Controls.Add(this.radioButton9);
-            this.panel3.Controls.Add(this.radioButton10);
-            this.panel3.Controls.Add(this.radioButton12);
-            this.panel3.Controls.Add(this.radioButton13);
-            this.panel3.Controls.Add(this.radioButton14);
-            this.panel3.Controls.Add(this.radioButton8);
+            this.panel3.Controls.Add(this.radioButtonRestock);
+            this.panel3.Controls.Add(this.radioButtonManageDrink);
+            this.panel3.Controls.Add(this.radioButtonManageFood);
+            this.panel3.Controls.Add(this.radioButtonSalesReport);
+            this.panel3.Controls.Add(this.radioButtonSetting);
+            this.panel3.Controls.Add(this.radioButtonLogout);
+            this.panel3.Controls.Add(this.radioButtonDashboard);
             this.panel3.Location = new System.Drawing.Point(11, 17);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(176, 445);
@@ -222,6 +230,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "ManageDrink";
             this.Text = "ManageDrink";
+            this.Load += new System.EventHandler(this.ManageDrink_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -238,13 +247,13 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label welcomeadminLbl;
-        private System.Windows.Forms.RadioButton radioButton11;
-        private System.Windows.Forms.RadioButton radioButton9;
-        private System.Windows.Forms.RadioButton radioButton10;
-        private System.Windows.Forms.RadioButton radioButton12;
-        private System.Windows.Forms.RadioButton radioButton13;
-        private System.Windows.Forms.RadioButton radioButton14;
-        private System.Windows.Forms.RadioButton radioButton8;
+        private System.Windows.Forms.RadioButton radioButtonRestock;
+        private System.Windows.Forms.RadioButton radioButtonManageDrink;
+        private System.Windows.Forms.RadioButton radioButtonManageFood;
+        private System.Windows.Forms.RadioButton radioButtonSalesReport;
+        private System.Windows.Forms.RadioButton radioButtonSetting;
+        private System.Windows.Forms.RadioButton radioButtonLogout;
+        private System.Windows.Forms.RadioButton radioButtonDashboard;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dataGridView1;

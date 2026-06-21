@@ -17,7 +17,6 @@ namespace New_Food
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new ManageDrink());
-            Application.Run(new ManageFood());
         }
     }
 }

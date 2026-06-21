@@ -13,10 +13,7 @@ namespace New_Food
 {
     public partial class ManageDrink : Form
     {
-            string connStr = @"Data Source=(LocalDB)\MSSQLLocalDB;
-        AttachDbFilename=|DataDirectory|\VendingMachine.mdf;
-        Integrated Security=True";
-
+        string connStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\VendingMachine.mdf;Integrated Security=True";
         public ManageDrink()
         {
             InitializeComponent();
@@ -30,34 +27,33 @@ namespace New_Food
             comboBox1.Items.Add("Milk");
 
             AddGridButtons();
+
+            comboBox1.SelectedIndex = 0;
+            LoadData();
         }
         private void AddGridButtons()
         {
-            if (!dataGridView1.Columns.Contains("Edit"))
-            {
-                DataGridViewButtonColumn edit = new DataGridViewButtonColumn();
-                edit.HeaderText = "Edit";
-                edit.Text = "Edit";
-                edit.UseColumnTextForButtonValue = true;
-                edit.Name = "Edit";
+            dataGridView1.Columns.Clear();
 
-                dataGridView1.Columns.Add(edit);
-            }
+            DataGridViewButtonColumn edit = new DataGridViewButtonColumn();
+            edit.HeaderText = "Edit";
+            edit.Text = "Edit";
+            edit.UseColumnTextForButtonValue = true;
+            edit.Name = "Edit";
 
-            if (!dataGridView1.Columns.Contains("Delete"))
-            {
-                DataGridViewButtonColumn del = new DataGridViewButtonColumn();
-                del.HeaderText = "Delete";
-                del.Text = "Delete";
-                del.UseColumnTextForButtonValue = true;
-                del.Name = "Delete";
+            dataGridView1.Columns.Add(edit);
 
-                dataGridView1.Columns.Add(del);
-            }
+            DataGridViewButtonColumn del = new DataGridViewButtonColumn();
+            del.HeaderText = "Delete";
+            del.Text = "Delete";
+            del.UseColumnTextForButtonValue = true;
+            del.Name = "Delete";
+
+            dataGridView1.Columns.Add(del);
         }
         private void LoadData()
         {
-            if (comboBox1.Text == "")
+            if (comboBox1.SelectedItem == null)
                 return;
 
             using (SqlConnection con = new SqlConnection(connStr))
@@ -108,6 +104,58 @@ namespace New_Food
 
                 LoadData();
             }
+        }
+
+        private void radioButton8_CheckedChanged(object sender, EventArgs e)
+        {
+            dashboard_admin f = new dashboard_admin();
+            f.Show();
+            this.Hide();
+        }
+
+        private void radioButtonManageDrink_CheckedChanged(object sender, EventArgs e)
+        {
+            if (!radioButtonManageDrink.Checked) return;
+        }
+        private void radioButtonManageFood_CheckedChanged(object sender, EventArgs e)
+        {
+            if (!radioButtonManageFood.Checked) return;
+
+            MessageBox.Show("clicked food");
+
+            ManageFood f = new ManageFood();
+            f.Show();
+            this.Hide();
+        }
+        private void radioButtonRestock_CheckedChanged(object sender, EventArgs e)
+        {
+            Restock f = new Restock();
+            f.Show();
+            this.Hide();
+        }
+
+        private void radioButtonSalesReport_CheckedChanged(object sender, EventArgs e)
+        {
+            salesReport f = new salesReport();
+            f.Show();
+            this.Hide();
+        }
+
+        private void radioButtonSetting_CheckedChanged(object sender, EventArgs e)
+        {
+            settings_admin f = new settings_admin();
+            f.Show();
+            this.Hide();
+        }
+
+        private void radioButtonLogout_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
