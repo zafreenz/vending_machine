@@ -16,5 +16,12 @@ namespace New_Food
         {
             InitializeComponent();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            LoginAdmin1 la = new LoginAdmin1();
+            la.Show();
+            this.Hide();
+        }
     }
 }
