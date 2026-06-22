@@ -324,5 +324,10 @@ namespace New_Food
             pd.Show();
             this.FindForm().Hide();
         }
+
+        private void AllFoodsMenuLayout_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

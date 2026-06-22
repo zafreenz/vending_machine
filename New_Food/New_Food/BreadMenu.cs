@@ -75,5 +75,10 @@ namespace New_Food
             pd.Show();
             this.FindForm().Hide();
         }
+
+        private void BreadMenuLayout_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

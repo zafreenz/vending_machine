@@ -95,6 +95,7 @@
             this.BreadMenuLayout.Name = "BreadMenuLayout";
             this.BreadMenuLayout.Size = new System.Drawing.Size(830, 684);
             this.BreadMenuLayout.TabIndex = 5;
+            this.BreadMenuLayout.Paint += new System.Windows.Forms.PaintEventHandler(this.BreadMenuLayout_Paint);
             // 
             // Bread1GB
             // 

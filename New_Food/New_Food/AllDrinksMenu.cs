@@ -296,5 +296,10 @@ namespace New_Food
             pd.Show();
             this.FindForm().Hide();
         }
+
+        private void AllDrinksMenuLayout_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

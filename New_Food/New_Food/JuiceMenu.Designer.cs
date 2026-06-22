@@ -95,6 +95,7 @@
             this.JuiceMenuLayout.Name = "JuiceMenuLayout";
             this.JuiceMenuLayout.Size = new System.Drawing.Size(833, 763);
             this.JuiceMenuLayout.TabIndex = 0;
+            this.JuiceMenuLayout.Paint += new System.Windows.Forms.PaintEventHandler(this.JuiceMenuLayout_Paint);
             // 
             // Juice1GB
             // 

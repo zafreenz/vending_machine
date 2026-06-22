@@ -391,6 +391,7 @@
             this.AllFoodsMenuLayout.Name = "AllFoodsMenuLayout";
             this.AllFoodsMenuLayout.Size = new System.Drawing.Size(830, 3966);
             this.AllFoodsMenuLayout.TabIndex = 5;
+            this.AllFoodsMenuLayout.Paint += new System.Windows.Forms.PaintEventHandler(this.AllFoodsMenuLayout_Paint);
             // 
             // Snacks1GB
             // 

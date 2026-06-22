@@ -359,6 +359,7 @@
             this.AllDrinksMenuLayout.Name = "AllDrinksMenuLayout";
             this.AllDrinksMenuLayout.Size = new System.Drawing.Size(830, 3263);
             this.AllDrinksMenuLayout.TabIndex = 6;
+            this.AllDrinksMenuLayout.Paint += new System.Windows.Forms.PaintEventHandler(this.AllDrinksMenuLayout_Paint);
             // 
             // Carbonated1GB
             // 

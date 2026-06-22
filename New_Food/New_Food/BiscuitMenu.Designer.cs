@@ -111,6 +111,7 @@
             this.BiscuitMenuLayout.Name = "BiscuitMenuLayout";
             this.BiscuitMenuLayout.Size = new System.Drawing.Size(830, 1198);
             this.BiscuitMenuLayout.TabIndex = 6;
+            this.BiscuitMenuLayout.Paint += new System.Windows.Forms.PaintEventHandler(this.BiscuitMenuLayout_Paint);
             // 
             // Biscuit1GB
             // 

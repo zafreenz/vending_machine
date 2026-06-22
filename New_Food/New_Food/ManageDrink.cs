@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace New_Food
 {
     public partial class ManageDrink : Form
@@ -45,13 +46,13 @@ namespace New_Food
 
             dataGridView1.Columns.Add(edit);
 
-            DataGridViewButtonColumn del = new DataGridViewButtonColumn();
-            del.HeaderText = "Delete";
-            del.Text = "Delete";
-            del.UseColumnTextForButtonValue = true;
-            del.Name = "Delete";
+            //DataGridViewButtonColumn del = new DataGridViewButtonColumn();
+            //del.HeaderText = "Delete";
+            //del.Text = "Delete";
+            //del.UseColumnTextForButtonValue = true;
+            //del.Name = "Delete";
 
-            dataGridView1.Columns.Add(del);
+            //dataGridView1.Columns.Add(del);
         }
         private void LoadData()
         {
@@ -76,57 +77,66 @@ namespace New_Food
         {
             LoadData();
         }
-
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex < 0) return;
 
             string col = dataGridView1.Columns[e.ColumnIndex].Name;
-
-            string name = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+            string name = dataGridView1.Rows[e.RowIndex].Cells["ProductName"].Value.ToString();
+            string currentPrice = dataGridView1.Rows[e.RowIndex].Cells["Price"].Value.ToString();
 
             if (col == "Edit")
             {
-                MessageBox.Show("Edit function (next step kita upgrade)");
-            }
-            else if (col == "Delete")
-            {
+                string input = Microsoft.VisualBasic.Interaction.InputBox(
+                    "Product: " + name + "\nCurrent Price: RM " + currentPrice + "\n\nEnter new price (RM):",
+                    "Edit Price",
+                    currentPrice);
+
+                if (string.IsNullOrWhiteSpace(input)) return;
+
+                if (!decimal.TryParse(input, out decimal newPrice) || newPrice <= 0)
+                {
+                    MessageBox.Show("Invalid price. Please enter a valid number.", "Error",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
                 using (SqlConnection con = new SqlConnection(connStr))
                 {
                     con.Open();
-
                     SqlCommand cmd = new SqlCommand(
-                        "DELETE FROM Product WHERE ProductName = @name", con);
-
+                        "UPDATE Product SET Price = @price WHERE ProductName = @name", con);
+                    cmd.Parameters.AddWithValue("@price", newPrice);
                     cmd.Parameters.AddWithValue("@name", name);
                     cmd.ExecuteNonQuery();
                 }
 
-                MessageBox.Show("Deleted from database");
+                MessageBox.Show("Price updated successfully!", "Success",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                LoadData();
+                LoadData(); // refresh grid
             }
         }
-
         private void radioButton8_CheckedChanged(object sender, EventArgs e)
-        {
-            dashboard_admin f = new dashboard_admin();
-            f.Show();
-            this.Hide();
-        }
+{
+    dashboard_admin f = new dashboard_admin();
+    f.Show();
+    this.Hide();
+}
 
-        private void radioButtonManageDrink_CheckedChanged(object sender, EventArgs e)
-        {
-            if (!radioButtonManageDrink.Checked) return;
-        }
-        private void radioButtonManageFood_CheckedChanged(object sender, EventArgs e)
-        {
-            if (!radioButtonManageFood.Checked) return;
+private void radioButtonManageDrink_CheckedChanged(object sender, EventArgs e)
+{
+    if (!radioButtonManageDrink.Checked) return;
+}
 
-            ManageFood f = new ManageFood();
-            f.Show();
-            this.Hide();
-        }
+private void radioButtonManageFood_CheckedChanged(object sender, EventArgs e)
+{
+    if (!radioButtonManageFood.Checked) return;
+
+    ManageFood f = new ManageFood();
+    f.Show();
+    this.Hide();
+}
         private void radioButtonRestock_CheckedChanged(object sender, EventArgs e)
         {
             Restock f = new Restock();
